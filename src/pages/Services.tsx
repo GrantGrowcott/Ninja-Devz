@@ -1,35 +1,29 @@
-import "../css/Services.css";
-import { webLayout, designIcons, computerGraphs } from "../constants";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { FaWheelchair, FaKey, FaGoogle } from "react-icons/fa";
 import { MdWeb } from "react-icons/md";
 import ContactButton from "../components/ContactButton";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import Head from "next/head";
 import Image from "next/image";
-
 
 const Services = () => {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Ninja Devz Web Development Services | Custom Websites & Mobile Apps</title>
-          <meta
-            name="description"
-            content="Discover Ninja Devz web development services: custom websites, mobile apps, SEO optimization, graphic design, and ongoing updates. Learn more about our comprehensive solutions."
-          />
-
-          <link rel="canonical" href="https://ninjadevz.com/Services" />
-        </Helmet>
-      </HelmetProvider>
+      <Head>
+        <title>Ninja Devz Web Development Services | Custom Websites & Mobile Apps</title>
+        <meta
+          name="description"
+          content="Discover Ninja Devz web development services: custom websites, mobile apps, SEO optimization, graphic design, and ongoing updates. Learn more about our comprehensive solutions."
+        />
+        <link rel="canonical" href="https://ninjadevz.com/Services" />
+      </Head>
       <NavBar />
       <header></header>
       <main className="services">
         <div className="design__container">
           <div className="design__inner__container">
-            <Image src={webLayout} alt="Web Layout Icons" />
+            <Image src="/web-layout.png" alt="Web Layout Icons" width={50} height={50} loading="lazy" />
           </div>
           <section className="logos__inner__container">
             <h1>Web Design and Mobile Applications to Perfection!!</h1>
@@ -83,13 +77,13 @@ const Services = () => {
             </ul>
           </div>
           <div className="computer__container">
-            <Image src={computerGraphs} alt="Computer Graphs Drawing" />
+            <Image src="/computer-graphs.png" alt="Computer Graphs Drawing" width={50} height={50} loading="lazy" />
           </div>
         </section>
 
         <section className="logos__container">
           <div className="logos__inner__container">
-            <Image src={designIcons} alt="Design Icons Drawing" />
+            <Image src="/design-icons.png" alt="Design Icons Drawing" width={50} height={50} loading="lazy" />
           </div>
           <div className="logos__inner__container">
             <h3>Graphics, Animations, Logos and Design</h3>

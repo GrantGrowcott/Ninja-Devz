@@ -26,17 +26,17 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/about" className="nav-links" onClick={handleClick}>
+            <Link href="/About" className="nav-links" onClick={handleClick}>
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/services" className="nav-links" onClick={handleClick}>
+            <Link href="/Services" className="nav-links" onClick={handleClick}>
               Services
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/contact" className="nav-links" onClick={handleClick}>
+            <Link href="/Contact" className="nav-links" onClick={handleClick}>
               Contact
             </Link>
           </li>

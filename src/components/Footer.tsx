@@ -4,13 +4,13 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 const Footer = () => {
-    const router = useRouter();
+  const router = useRouter();
 
   return (
     <>
       <footer className="footer">
         <address className="footer__container">
-          <Image src={logo} alt="Ninja Devz Logo" />
+          <Image src={logo} alt="Ninja Devz Logo" width={660} height={196} />
           <h4>admin@ninjadevz.com</h4>
           <h4>(905)517-0696</h4>
         </address>
@@ -20,13 +20,19 @@ const Footer = () => {
           </div>
           <ul className="footer__list">
             <li>
-              <button type="button" name="Home Button" onClick={() => handleNavigation("/", router.push)} className="footer__button">
+              <button
+                type="button"
+                name="Home Button"
+                onClick={() => handleNavigation("/", router.push)}
+                className="footer__button"
+              >
                 <h4>Home</h4>
               </button>
             </li>
             <li>
               <button
-                name="About Button" type="button"
+                name="About Button"
+                type="button"
                 onClick={() => handleNavigation("/About", router.push)}
                 className="footer__button"
               >
@@ -35,7 +41,8 @@ const Footer = () => {
             </li>
             <li>
               <button
-                name="Services Button" type="button"
+                name="Services Button"
+                type="button"
                 onClick={() => handleNavigation("/Services", router.push)}
                 className="footer__button"
               >
@@ -44,7 +51,8 @@ const Footer = () => {
             </li>
             <li>
               <button
-                name="Contact Button" type="button"
+                name="Contact Button"
+                type="button"
                 onClick={() => handleNavigation("/Contact", router.push)}
                 className="footer__button"
               >
@@ -59,7 +67,7 @@ const Footer = () => {
           </div>
           <ul className="footer__list">
             <li>
-              <button className="no__styles" >
+              <button className="no__styles">
                 <h4>Web Design</h4>
               </button>
             </li>

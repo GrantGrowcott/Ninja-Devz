@@ -1,24 +1,37 @@
 import Products from "../components/Products";
-import { piggyBank, checkCircle, profilePic, stopWatch, funnel, grant } from "../constants";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import Head from "next/head";
 import Image from "next/image";
+import { GetServerSideProps } from "next";
 
-const Home = () => {
+interface HomeProps {
+  imageUrl: string;
+}
+export const getServerSideProps: GetServerSideProps = async () => {
+  const imageUrl =
+    "https://res.cloudinary.com/dkvo68om8/image/upload/f_auto,q_auto/v1733100825/y2piqivtxjwnsp5myxvq.webp";
+  return {
+    props: {
+      imageUrl,
+      revalidate: 10,
+    },
+  };
+};
+
+const Home = ({ imageUrl }: HomeProps) => {
   return (
     <main>
       <NavBar />
-      <HelmetProvider>
-        <Helmet>
+     
+        <Head>
           <title>Ninja Devz | Web Development Services | Custom Websites & Mobile Apps</title>
           <meta
             name="description"
             content="Welcome to Ninja Devz, experts in crafting performative websites for growing enterprises. We offer ReactJS-based web development services with adaptable designs, rapid load times, and performance tracking. Learn more about our mission and services."
           />
           <link rel="canonical" href="https://ninjadevz.com" />
-        </Helmet>
-      </HelmetProvider>
+        </Head>
       <section className="home__container">
         <div className="home__intro">
           <div className="home__description">
@@ -41,13 +54,14 @@ const Home = () => {
           <div className="home__image">
             <Image
               className="ninja-image"
-              src="https://res.cloudinary.com/dkvo68om8/image/upload/v1733100825/y2piqivtxjwnsp5myxvq.webp"
+              src={imageUrl}
               alt="Ninja at a computer"
               width={464}
               height={600}
               sizes="(max-width: 450px) 150px, (max-width: 900px) 300px, 600px"
               priority
               style={{ borderRadius: "30px" }}
+              loading="eager"
             />
           </div>
         </div>
@@ -70,7 +84,7 @@ const Home = () => {
         </section>
         <section className="attributes">
           <div className="attributes__container">
-            <Image src="/targetDevices.png" alt="Target symbol with devices" width={100} height={100} loading="lazy" />
+            <Image src="/target-devices.png" alt="Target symbol with devices" width={100} height={100} loading="lazy" />
             <div>
               <h3>Adaptable to all devices</h3>
               <h4>
@@ -213,7 +227,7 @@ const Home = () => {
           </div>
           <div className="profile__image">
             <Image
-              src="/profile-pic.png"
+              src="/profile-pic.jpg"
               alt="Grant Growcott Profile in Black and White"
               width={200}
               height={200}
