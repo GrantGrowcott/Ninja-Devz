@@ -13,11 +13,11 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)', // Apply to all routes
+        source: "/(.*)", // match all routes
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=3600, must-revalidate', // Adjust cache behavior
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable", // Allow caching
           },
         ],
       },
