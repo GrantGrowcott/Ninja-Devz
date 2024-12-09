@@ -989,9 +989,6 @@ align-content: flex-start;
   align-content: center;
   min-height: 300px;
 }
-.footer__container img {
-
-}
 .footer__list {
   text-align: left;
   list-style-type: none; 
