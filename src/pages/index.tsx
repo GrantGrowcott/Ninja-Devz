@@ -95,7 +95,7 @@ const Home = ({ imageUrl }: HomeProps) => {
           </div>
           <div className="attributes__container">
             <Image
-              src="/stopWatch.png"
+              src="/stopwatch.png"
               alt="Stopwatch moving quickly in the wind"
               width={200}
               height={200}
