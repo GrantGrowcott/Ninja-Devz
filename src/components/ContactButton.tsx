@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
-import { handleNavigation } from "@/pages/helpers/helpers";
+import { handleNavigation } from "@/helpers/helpers";
 
 const ContactButton = () => {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <button
       type="button"

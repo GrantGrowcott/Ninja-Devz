@@ -1,7 +1,3 @@
-
-
-
-//  Function for handling the navigation and where the user screen will center on
 export const handleNavigation = (route: string, navigate: (route: string) => void) => {
     let scrollToPosition: number | undefined;
   

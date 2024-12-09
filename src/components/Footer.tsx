@@ -1,5 +1,5 @@
 import logo from "../../public/logo-text.png";
-import { handleNavigation } from "@/pages/helpers/helpers";
+import { handleNavigation } from "@/helpers/helpers";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
