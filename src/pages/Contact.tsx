@@ -25,9 +25,10 @@ const Contact = () => {
           <Image
             src="/contact-info.png"
             alt="Contact information for Grant Growcott. Email Address: admin@ninjadevz.com | Phone Number: (905)-517-0696"
-            width={200}
-            height={200}
+            width={500}
+            height={500}
             loading="lazy"
+            className="contact__image"
           />
         </address>
       </main>

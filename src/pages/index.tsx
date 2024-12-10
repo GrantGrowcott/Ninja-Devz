@@ -72,7 +72,7 @@ const Home = ({ imageUrl }: HomeProps) => {
           <div className="scope__phone__container">
             <p>-------</p>
             <div className="scope__phone">
-              <Image src="/phone.png" alt="Phone Icon" width={50} height={50} loading="lazy" />
+              <Image src="/phone.png" alt="Phone Icon" width={100} height={100} loading="lazy" />
             </div>
             <p>-------</p>
           </div>
@@ -132,14 +132,14 @@ const Home = ({ imageUrl }: HomeProps) => {
               src="/piggy-bank.png"
               alt="Piggy Bank with Coins Art"
               className="piggy__image"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               loading="lazy"
             />
           </div>
           <div className="pricing__container">
             <h3>
-              <b className="green-text">No initial payment </b> required, with monthly payments of{" "}
+              <b className="green-text">No initial payment </b> required, with monthly payments of
               <b className="green-text"> $200</b> for a minimum commitment of 12 months.
             </h3>
             <h4 className="line__margin">
@@ -208,8 +208,8 @@ const Home = ({ imageUrl }: HomeProps) => {
               <Image
                 src="/grant.png"
                 alt="Vector graphic of Grant (The Founder)"
-                width={200}
-                height={200}
+                width={125}
+                height={125}
                 loading="lazy"
               />
             </div>

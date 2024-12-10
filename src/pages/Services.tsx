@@ -23,7 +23,14 @@ const Services = () => {
       <main className="services">
         <div className="design__container">
           <div className="design__inner__container">
-            <Image src="/web-layout.png" alt="Web Layout Icons" width={50} height={50} loading="lazy" />
+            <Image
+              src="/web-layout.png"
+              alt="Web Layout Icons"
+              width={500}
+              height={500}
+              loading="lazy"
+              className="design__image"
+            />
           </div>
           <section className="logos__inner__container">
             <h1>Web Design and Mobile Applications to Perfection!!</h1>
@@ -38,9 +45,6 @@ const Services = () => {
             </h4>
           </section>
         </div>
-
-        {/* Search Engine Section */}
-
         <section className="logos__container">
           <div className="logos__inner__container">
             <h3>Proficiency Through Search Engine Optimization</h3>
@@ -77,13 +81,19 @@ const Services = () => {
             </ul>
           </div>
           <div className="computer__container">
-            <Image src="/computer-graphs.png" alt="Computer Graphs Drawing" width={50} height={50} loading="lazy" />
+            <Image src="/computer-graphs.png" alt="Computer Graphs Drawing" width={500} height={500} loading="lazy" className="computer__image"/>
           </div>
         </section>
-
         <section className="logos__container">
           <div className="logos__inner__container">
-            <Image src="/design-icons.png" alt="Design Icons Drawing" width={50} height={50} loading="lazy" />
+            <Image
+              src="/design-icons.png"
+              alt="Design Icons Drawing"
+              width={500}
+              height={500}
+              loading="lazy"
+              className="logos__image"
+            />
           </div>
           <div className="logos__inner__container">
             <h3>Graphics, Animations, Logos and Design</h3>

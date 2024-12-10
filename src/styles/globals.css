@@ -270,7 +270,7 @@ label {
 .home__description {
    flex:1;
    position: relative;
-   padding-right: 14em;
+   padding-right: 4em;
 }
 .ninja-image {
     width: 29rem;
@@ -407,10 +407,7 @@ label {
     align-items: center;
     justify-content: center;
 }
-.piggy__image{
-    width: 15rem;
-    height: 15rem;
-}
+
 .pricing__container {
     flex: 1;
     text-align: center;
@@ -459,10 +456,7 @@ label {
 .profile__phone__container p{
     color: var(--green);
 }
-.profile__phone img {
-   height: 8rem;
-   width: 8rem;
-}
+
 .profile__description {
     padding: 0 2em;
     text-align: center;
@@ -661,12 +655,11 @@ color: var(--green);
 .about__container__image {
    flex: 1;
    text-align: center;
+   border-radius: 30px;
 }
-.about__container__image img{
-    height: 25rem;
-    width: 25rem;
-    padding-bottom: 5rem
-}
+
+
+
 .about__container__description {
    flex: 1;
 }
@@ -721,6 +714,17 @@ color: var(--green);
 .contact__container {
    flex: 1;
 } 
+
+.contact__image {
+  width: 500px;
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+.contact__image {
+  width: 300px;
+  height: 300px;
+}
+}
 .contact__inner__container {
    flex: 1;
    display: flex; 
@@ -797,11 +801,7 @@ color: var(--green);
    .about__container {
        flex-direction: column;
    }
-   .about__container__image img{
-       height: 15rem;
-       width: 15rem;
-       padding-bottom: 5rem
-  } 
+    
   .numbers {
    flex-direction: column;
    align-items: center;
@@ -832,10 +832,18 @@ color: var(--green);
   text-align: left; 
 }
 
-.design__inner__container img {
-  max-width: 100%;
-  height: auto;
+.design__image {
+  width: 500px;
+  height: 500px;
 }
+
+@media screen and (max-width: 768px) {
+  .design__image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .logos__container {
   display: flex;
   justify-content: center;
@@ -854,12 +862,29 @@ color: var(--green);
   flex: 1;
   text-align:center;  
 }
+
+.computer__image {
+  width: 500px;
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+.computer__image {
+  width: 300px;
+  height: 300px;
+}
+}
 .logos__inner__container h4{
   margin: 2em 0; 
 }
-.logos__inner__container img{
-  max-width: 100%;
-  height: auto;
+  .logos__image {
+    width: 500px;
+    height: 500px;
+  }
+@media screen and (max-width: 768px) {
+  .logos__image {
+    width: 300px;
+    height: 300px;
+  }
 }
 .logos__list {
   list-style-type: none; 
@@ -947,10 +972,6 @@ align-content: flex-start;
       grid-template-columns: repeat(1,minmax(200px, 400px));
   }
 }
-
-
-/* Contact Page */
-
 .contact__page {
   display: flex;
   justify-content: center;
@@ -958,27 +979,17 @@ align-content: flex-start;
   width: 65%;
   margin: 5rem auto
 }
-
-.contact__container img {
-  max-width: 100%;
-  height: auto;
-}
-
 @media screen and (max-width: 1200px){
   .contact__page {
 
       flex-direction: column;
   }
 }
-
-
-/* Footer Section */
-
 .footer {
   padding-top: 10em;
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   gap: 10px;
   border-bottom: 2px solid var(--green);
@@ -1030,7 +1041,7 @@ align-content: flex-start;
 .footer__button:focus {
   box-shadow: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .footer {
       flex-direction: column;
   }

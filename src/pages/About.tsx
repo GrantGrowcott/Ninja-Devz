@@ -25,9 +25,10 @@ const About = () => {
             <Image
               src="/profile-pic.jpg"
               alt="Grant Growcott Profile in Black and White"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               loading="lazy"
+              className="about__container__image"
             />
           </div>
           <div className="about__container__description">
