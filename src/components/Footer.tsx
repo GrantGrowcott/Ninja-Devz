@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <footer className="footer">
         <address className="footer__container">
-          <Image src={logo} alt="Ninja Devz Logo" width={260} height={90} />
+          <Image src={logo} alt="Ninja Devz Logo" width={190} height={70} />
           <h4>admin@ninjadevz.com</h4>
           <h4>(905)517-0696</h4>
         </address>

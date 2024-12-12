@@ -16,7 +16,7 @@ function NavBar() {
       <div className="nav-container">
         <Link href="/" className="nav-logo">
           <span className="icon">
-            <Image src={logo} alt="Ninja Devz Company Logo" />
+            <Image src={logo} alt="Ninja Devz Company Logo" width={190} height={70} />
           </span>
         </Link>
         <ul className={click ? "nav-menu active" : "nav-menu"}>

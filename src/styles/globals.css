@@ -194,14 +194,7 @@ label {
   .nav-icon {
     display: none;
   }
-  .nav-logo img {
-    width: 203px;
-    height: 60px;
-  }
-  .nav-logo .icon {
-    width: 203px;
-    height: 60px;
-  }
+  
   .nav-color {
     color: var(--black);
   } 
@@ -667,9 +660,9 @@ color: var(--green);
    color: var(--green);
    font-size: 2em;
 }
-.about__container__description h5{
+.about__container__description h3{
    color: var(--white);
-   margin: 0.75em 0
+   margin: 1em 0;
 }
 .topper {
    padding-top: 10rem;
