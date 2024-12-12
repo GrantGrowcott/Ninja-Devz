@@ -33,19 +33,16 @@ const About = () => {
           </div>
           <div className="about__container__description">
             <h1>Ninja Devz</h1>
-            <h3>Helping to make the world a better place through design</h3>
-            <h4>
+            <h2>Helping to make the world a better place through design</h2>
+            <h3>
               My name is Grant Growcott, I am the lead software engineer at Ninja Devz. As a natural problem solver, I
               always look at business websites and think that I can make changes for the better. Coming from a medical
               background, I bring the customer care necessary to understand the needs of each person looking to build a
               mobile application or website. After dedicating years to refining my engineering abilities, I&apos;ve
               mastered a highly effective method that excels in producing outstanding web experiences and applications.
-            </h4>
+            </h3>
           </div>
         </section>
-
-        {/* Quality Section */}
-
         <div className="topper">
           <h3 className="topper__container">
             <b className="green-text"> Results </b> Are <b className="green-text">Guaranteed</b>
