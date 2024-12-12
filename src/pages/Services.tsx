@@ -34,15 +34,15 @@ const Services = () => {
           </div>
           <section className="logos__inner__container">
             <h1>Web Design and Mobile Applications to Perfection!!</h1>
-            <h4>
+            <h2>
               All mobile applications and websites are built in house by hand to ensure maximum customizability and
               performance. Our code will outperform the standard wordpress and framework through or meticulous research
               and understanding of code and design.
-            </h4>
-            <h4>
+            </h2>
+            <h3>
               We recognize the importance of<span className="green-text"> optimizing internet traffic </span> for
               seamless connectivity and performance, a concept often overlooked but crucial for developers.
-            </h4>
+            </h3>
           </section>
         </div>
         <section className="logos__container">
