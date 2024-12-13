@@ -42,7 +42,7 @@ const Home = ({ imageUrl }: HomeProps) => {
             </h1>
             <h2>
               Experts in crafting performative websites for growing enterprises!! We help you with branding, content
-              creation and SEO. Operate your business stress free.
+              creation and SEO. Operate your business stress free. Click below for a free consultation!!! 
             </h2>
             <a href="https://calendly.com/admin-ninjadevz/60min">
               <button type="button" name="Contact Us Button" className="touch__button">
