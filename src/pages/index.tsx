@@ -23,15 +23,14 @@ const Home = ({ imageUrl }: HomeProps) => {
   return (
     <main>
       <NavBar />
-     
-        <Head>
-          <title>Ninja Devz | Web Development Services | Custom Websites & Mobile Apps</title>
-          <meta
-            name="description"
-            content="Welcome to Ninja Devz, experts in crafting performative websites for growing enterprises. We offer ReactJS-based web development services with adaptable designs, rapid load times, and performance tracking. Learn more about our mission and services."
-          />
-          <link rel="canonical" href="https://ninjadevz.com" />
-        </Head>
+      <Head>
+        <title>Ninja Devz | Web Development Services | Custom Websites & Mobile Apps</title>
+        <meta
+          name="description"
+          content="Welcome to Ninja Devz, experts in crafting performative websites for growing enterprises. We offer ReactJS-based web development services with adaptable designs, rapid load times, and performance tracking. Learn more about our mission and services."
+        />
+        <link rel="canonical" href="https://ninjadevz.com" />
+      </Head>
       <section className="home__container">
         <div className="home__intro">
           <div className="home__description">
@@ -42,7 +41,7 @@ const Home = ({ imageUrl }: HomeProps) => {
             </h1>
             <h2>
               Experts in crafting performative websites for growing enterprises!! We help you with branding, content
-              creation and SEO. Operate your business stress free. Click below for a free consultation!!! 
+              creation and SEO. Operate your business stress free. Click below for a free consultation!!!
             </h2>
             <a href="https://calendly.com/admin-ninjadevz/60min">
               <button type="button" name="Contact Us Button" className="touch__button">
