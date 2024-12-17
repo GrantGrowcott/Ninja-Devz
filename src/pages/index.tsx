@@ -19,6 +19,22 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
+function gtag_report_conversion(url: string) {
+  const callback = function () {
+    if (typeof(url) !== 'undefined') {
+      window.location.href = url; 
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11497787633/jr0aCIjW7vgZEPGhyeoq',
+    'event_callback': callback
+  });
+
+  return false;
+}
+
+
 const Home = ({ imageUrl }: HomeProps) => {
   return (
     <main>
@@ -43,7 +59,14 @@ const Home = ({ imageUrl }: HomeProps) => {
               Experts in crafting performative websites for growing enterprises!! We help you with branding, content
               creation and SEO. Operate your business stress free. Click below for a free consultation!!!
             </h2>
-            <a href="https://calendly.com/admin-ninjadevz/60min">
+            <a
+              href="https://calendly.com/admin-ninjadevz/60min"
+              onClick={(event) => {
+                event.preventDefault(); 
+                gtag_report_conversion("https://calendly.com/admin-ninjadevz/60min");
+                
+              }}
+            >
               <button type="button" name="Contact Us Button" className="touch__button">
                 <h3>Get Started</h3>
                 <div className="wave"></div>
