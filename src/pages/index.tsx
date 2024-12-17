@@ -21,19 +21,18 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
 function gtag_report_conversion(url: string) {
   const callback = function () {
-    if (typeof(url) !== 'undefined') {
-      window.location.href = url; 
+    if (typeof url !== "undefined") {
+      window.location.href = url;
     }
   };
 
-  gtag('event', 'conversion', {
-    'send_to': 'AW-11497787633/jr0aCIjW7vgZEPGhyeoq',
-    'event_callback': callback
+  gtag("event", "conversion", {
+    send_to: "AW-11497787633/jr0aCIjW7vgZEPGhyeoq",
+    event_callback: callback,
   });
 
   return false;
 }
-
 
 const Home = ({ imageUrl }: HomeProps) => {
   return (
@@ -62,9 +61,8 @@ const Home = ({ imageUrl }: HomeProps) => {
             <a
               href="https://calendly.com/admin-ninjadevz/60min"
               onClick={(event) => {
-                event.preventDefault(); 
+                event.preventDefault();
                 gtag_report_conversion("https://calendly.com/admin-ninjadevz/60min");
-                
               }}
             >
               <button type="button" name="Contact Us Button" className="touch__button">
