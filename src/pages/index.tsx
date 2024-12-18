@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 import { GetServerSideProps } from "next";
+import { gtag_report_conversion } from "@/helpers/helpers";
 
 interface HomeProps {
   imageUrl: string;
@@ -19,20 +20,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-function gtag_report_conversion(url: string) {
-  const callback = function () {
-    if (typeof url !== "undefined") {
-      window.location.href = url;
-    }
-  };
-
-  gtag("event", "conversion", {
-    send_to: "AW-11497787633/jr0aCIjW7vgZEPGhyeoq",
-    event_callback: callback,
-  });
-
-  return false;
-}
 
 const Home = ({ imageUrl }: HomeProps) => {
   return (

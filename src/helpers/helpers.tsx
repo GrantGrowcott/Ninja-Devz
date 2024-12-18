@@ -12,3 +12,19 @@ export const handleNavigation = (route: string, navigate: (route: string) => voi
     window.scrollTo(0, 0);
   };
   
+
+
+  export function gtag_report_conversion(url: string) {
+    const callback = function () {
+      if (typeof url !== "undefined") {
+        window.location.href = url;
+      }
+    };
+  
+    gtag("event", "conversion", {
+      send_to: "AW-11497787633/jr0aCIjW7vgZEPGhyeoq",
+      event_callback: callback,
+    });
+  
+    return false;
+  }
