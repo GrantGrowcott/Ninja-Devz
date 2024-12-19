@@ -1052,34 +1052,32 @@ align-content: flex-start;
 /* Offer Styles */
 .offer__container {
   background-color: var(--green);
-  min-height: 600px;
+  min-height: 700px;
 }
 .offer__container__inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
   width:80%;
   padding-top: 3rem;
   box-sizing: border-box;
 }
-.offer__container h1{
-  font-size: 3rem;
-}
+
 .offer__container h1{
   font-size: 3rem;
   max-width: 600px; 
-  line-height: 1.2; 
-  text-align: left; 
+  line-height: 1; 
+  text-align: center; 
   word-wrap: break-word; 
 }
 
 .offer__container h2 {
   font-size: 1.5rem;
   max-width: 600px; 
-  line-height: 1.5; 
-  text-align: left;
+  line-height: 1.7; 
+  text-align: center;
   word-wrap: break-word;
   margin: 1.5rem 0;
 }
@@ -1123,14 +1121,15 @@ align-content: flex-start;
   margin: 0 auto;
   width: 80%;
   min-height: 600px;
-  gap:50px;
+  gap:150px;
 }
 .problem__container__inner {
   flex: 1;
 }
 .problem__container__inner h4{
-  margin: 2rem 0;
   font-size: 2rem;
+  line-height: normal;
+  padding-bottom: 2em;
 }
 
 .problem__container__grid {
@@ -1141,7 +1140,8 @@ align-content: flex-start;
 }
 
 .problem__container__item {
-  display: flex; 
+  display: flex;
+  flex-direction: column; 
   justify-content: center; 
   align-items: center; 
   min-height: 200px;
@@ -1187,6 +1187,7 @@ align-content: flex-start;
 
 .plan__container__item h5{
   font-size: 1rem;
+  line-height: 2.5;
   margin-top: 1em;
 }
 @media screen and (max-width: 1050px) {
@@ -1205,6 +1206,3 @@ align-content: flex-start;
   text-align: center;
 }
 
-.center__form {
-  
-}

@@ -40,12 +40,27 @@ const Offer = () => {
           <div className="problem__container__grid">
             <div className="problem__container__item">
               <h3> You do not have the time to understand complex search engine optimization</h3>
+              <Image
+                src="/stopwatch.png"
+                alt="Stopwatch moving quickly in the wind"
+                width={200}
+                height={200}
+                loading="lazy"
+              />
             </div>
             <div className="problem__container__item">
               <h3>Your website lacks a modern feel that is limiting your business growth</h3>
+              <Image src="/target-devices.png" alt="Target symbol with devices" width={200} height={200} loading="lazy" />
             </div>
             <div className="problem__container__item">
-              <h3> Your website is slow but you do not understand how to fix it.</h3>
+              <h3> Your website is slow and you do not understand how to fix it.</h3>
+              <Image
+                            src="/funnel.png"
+                            alt="Converting gears into money through a funnel"
+                            width={200}
+                            height={200}
+                            loading="lazy"
+                          />
             </div>
           </div>
         </div>
