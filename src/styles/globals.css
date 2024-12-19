@@ -453,7 +453,7 @@ label {
     padding: 0 2em;
     text-align: center;
 }
-.profile__image  {
+.profile__image{
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -633,14 +633,14 @@ color: var(--green);
  }
 .technique__list {
    list-style-type: none;
-   margin-top: 1em;
+   margin: 1em 0;
 }
 .about__container {
    display: flex;
    justify-content: center;
    align-items: center;
    text-align: left;
-   gap: 30px
+   gap:30px;
 }
 .about__container__image {
    flex: 1;
@@ -1052,7 +1052,7 @@ align-content: flex-start;
 /* Offer Styles */
 .offer__container {
   background-color: var(--green);
-  min-height: 700px;
+  min-height: 600px;
 }
 .offer__container__inner {
   display: flex;
@@ -1061,25 +1061,34 @@ align-content: flex-start;
   align-items: center;
   margin: 0 auto;
   width:80%;
-  padding-top: 3rem;
+  padding: 3rem 0;
   box-sizing: border-box;
 }
 
 .offer__container h1{
   font-size: 3rem;
+  font-weight: bold;
   max-width: 600px; 
   line-height: 1; 
   text-align: center; 
   word-wrap: break-word; 
 }
-
 .offer__container h2 {
   font-size: 1.5rem;
   max-width: 600px; 
   line-height: 1.7; 
   text-align: center;
   word-wrap: break-word;
-  margin: 1.5rem 0;
+  padding-bottom: 4em;
+}
+
+@media screen and (max-width: 500px) {
+  .offer__container h1{
+    font-size: 2rem;
+  }
+  .offer__container h2 {
+    font-size: 1rem;
+  }
 }
 
 /* Values Grid */
@@ -1089,20 +1098,23 @@ align-content: flex-start;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 8rem auto;
   width:80%;
   gap:20px;
-  margin-top: 5rem;
 }
 
 .value__item {
   text-align: center;
   align-content: flex-start;
   min-height: 300px;
+  background-color: var(--lightGrey);
+  border-radius: 30px;
+  padding: 2em;
 }
 
 .value__item h3 {
   color: var(--green);
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 850px) {
@@ -1121,15 +1133,19 @@ align-content: flex-start;
   margin: 0 auto;
   width: 80%;
   min-height: 600px;
-  gap:150px;
+  gap:50px;
 }
 .problem__container__inner {
   flex: 1;
 }
 .problem__container__inner h4{
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: normal;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.problem__container__inner h5{
+  font-size: 1rem;
 }
 
 .problem__container__grid {
@@ -1204,5 +1220,12 @@ align-content: flex-start;
 .center__button {
   margin: 2em 0 ;
   text-align: center;
+}
+
+.center__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8em;
 }
 
