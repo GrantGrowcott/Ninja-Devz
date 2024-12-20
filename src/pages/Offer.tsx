@@ -19,8 +19,8 @@ const Offer = () => {
         <div className="offer__container__inner">
           <h1>Book Your Free Website Assessment!!!</h1>
           <h2>
-            From building fast,scalable websites to improving search rankings and generating more leads,we
-            deliver web solutions that empower your business to thrive.
+            From building fast,scalable websites to improving search rankings and generating more leads,we deliver web
+            solutions that empower your business to thrive.
           </h2>
           <GetStartedButton />
         </div>
@@ -45,31 +45,31 @@ const Offer = () => {
         <div className="problem__container__inner">
           <h4>Are you struggling to generate sales and leads for your business?</h4>
           <ul className="technique__list">
-                        <li>
-                          <div className="list__container">
-                            <AiFillCheckCircle size={30} color={"var(--green)"} />
-                            <p>Google Ads</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="list__container">
-                            <AiFillCheckCircle size={30} color={"var(--green)"} />
-                            <p>SEO</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="list__container">
-                            <AiFillCheckCircle size={30} color={"var(--green)"} />
-                            <p> Modern Design</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="list__container">
-                            <AiFillCheckCircle size={30} color={"var(--green)"} />
-                            <p>Online Scalability</p>
-                          </div>
-                        </li>
-                      </ul>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Google Ads</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>SEO</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p> Modern Design</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Online Scalability</p>
+              </div>
+            </li>
+          </ul>
           <GetStartedButton />
         </div>
         <div className="problem__container__inner">
@@ -152,7 +152,9 @@ const Offer = () => {
         <div className="plan__container__item">
           <h3>Step 1</h3>
           <h4>Plan</h4>
-          <h5>We work with you and your team to design a custom plan based on your needs. No stone is left unturned.</h5>
+          <h5>
+            We work with you and your team to design a custom plan based on your needs. No stone is left unturned.
+          </h5>
         </div>
         <div className="plan__container__item">
           <h3>Step 2</h3>
