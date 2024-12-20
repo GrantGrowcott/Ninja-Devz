@@ -221,10 +221,15 @@ label {
       color: var(--white);
       border: none;
     }
+
+    .nav-item:hover:after {
+      background: var(--white); 
+    }
     .nav-links {
       padding: 1.5rem;
-      width: 108%;
+      width: 100%;
       display: table;
+      color: var(--white);
     }
     .nav-icon {
       display: block;
@@ -1111,19 +1116,15 @@ align-content: flex-start;
   border-radius: 30px;
   padding: 2em;
 }
-
 .value__item h3 {
   color: var(--green);
   margin-top: 1em;
 }
-
 @media screen and (max-width: 850px) {
   .values__grid {
     grid-template-columns: 1fr;
   }
 }
-
-
 /* Problem Section */
 
 .problem__container {

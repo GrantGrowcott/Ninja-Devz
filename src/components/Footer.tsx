@@ -1,4 +1,4 @@
-import logo from "../../public/logo-text.png";
+import logo from "../../public/white-logo-text.png";
 import { handleNavigation } from "@/helpers/helpers";
 import { useRouter } from "next/router";
 import Image from "next/image";
