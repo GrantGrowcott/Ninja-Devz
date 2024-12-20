@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
 const router = useRouter()
 
    // List of routes where NavBar should be hidden
-   const noNavBarRoutes = ["/Offer"]; 
+   const noNavBarRoutes = ["/Offer", "/404"]; 
 
    // Check if the current route is in the list
    const shouldShowNavBar = !noNavBarRoutes.includes(router.pathname);

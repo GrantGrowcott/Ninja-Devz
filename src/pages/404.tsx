@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/logo-text.png";
 
 const Custom404: React.FC = () => {
   return (
@@ -30,7 +31,7 @@ const Custom404: React.FC = () => {
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Image
-            src="../../public/logo-text.png"
+            src={logo}
             alt="Ninja confused"
             style={{ width: "300px", height: "300px" }}
           />
