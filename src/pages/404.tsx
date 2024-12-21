@@ -5,11 +5,11 @@ import logo from "../../public/logo-text.png";
 
 const Custom404: React.FC = () => {
   return (
-      <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+      <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", backgroundColor: "white" }}>
         <div style={{ maxWidth: "60%", margin: "0 auto", paddingBottom: "2em" }}>
           <h1 style={{ fontSize: "48px", marginBottom: "1em" }}>Oops! We lost this page! 404 Error</h1>
-          <p style={{ lineHeight: "1.5" }}>We searched high and low and couldn&apos;t find a better place for you to go.</p>
-          <p style={{ lineHeight: "1.5" }}>Maybe try checking the URL or going back to our</p>
+          <p style={{ lineHeight: "1.5", color: "black"}}>We searched high and low and couldn&apos;t find a better place for you to go.</p>
+          <p style={{ lineHeight: "1.5", color: "black" }}>Maybe try checking the URL or going back to our</p>
           <button
             style={{
               backgroundColor: "#2bbb35",

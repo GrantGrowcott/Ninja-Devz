@@ -4,6 +4,10 @@
     url("../pages/fonts/RobotoMono-Medium.ttf") format("truetype");
 }
 
+a {
+  text-decoration: none !important;
+}
+
 * {
   margin: 0;
   padding: 0;
