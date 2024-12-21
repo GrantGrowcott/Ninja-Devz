@@ -5,7 +5,6 @@ import logo from "../../public/logo-text.png";
 
 const Custom404: React.FC = () => {
   return (
-    <div style={{ textAlign: "center", paddingTop: "20px", backgroundColor: "#FFFFFF" }}>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
         <div style={{ maxWidth: "60%", margin: "0 auto", paddingBottom: "2em" }}>
           <h1 style={{ fontSize: "48px", marginBottom: "1em" }}>Oops! We lost this page! 404 Error</h1>
@@ -33,11 +32,11 @@ const Custom404: React.FC = () => {
           <Image
             src={logo}
             alt="Ninja confused"
-            style={{ width: "300px", height: "300px" }}
+            style={{ width: "190px", height: "70px" }}
           />
         </div>
       </div>
-    </div>
+    
   );
 };
 
