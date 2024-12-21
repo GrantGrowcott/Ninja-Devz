@@ -1234,3 +1234,53 @@ align-content: flex-start;
   margin-top: 8em;
 }
 
+/* 404 Page Styles */
+
+.error__container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: var(--white);
+  height: 100vh;
+}
+
+.error__container__inner {
+ max-width: 60%;
+ margin: 0 auto; 
+ padding-bottom: 2em;
+}
+
+.error__container__inner h1{
+  font-size: 2rem; 
+  margin-bottom: 1em;
+ }
+
+ .error__container__inner p{
+  line-height: 1.5; 
+  color: var(--black)
+ }
+
+ .error__container__inner button{
+  background-color: var(--green);
+  padding: 1em 1.7em;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  border-width: 0.5mm;
+  border-style: solid;
+  border-color: var(--black);
+  text-decoration: none;
+ }
+
+ .error__container__inner a{
+  color: var(--black); 
+  text-decoration: "none"; 
+  font-weight: "bold";
+ }
+
+ .logo__container {
+   display: flex; 
+   justify-content: center;
+  
+ }
