@@ -29,21 +29,31 @@ const Offer = () => {
       <div className="values__grid">
         <div className="value__item">
           <h3>Results tailored to your needs</h3>
-          <h4>We never compromise on quality. All questions are valid in our eyes</h4>
+          <h4>
+            We never compromise on quality. All questions are valid in our eyes. Do you need help with{" "}
+            <span className="green-text">content creation</span>? We&apos;ve got you covered at{" "}
+            <span className="green-text">competitive pricing</span>!
+          </h4>
         </div>
         <div className="value__item">
           <h3>Performance Optimized Websites</h3>
-          <h4>We use the fasted frameworks that make google and you and your customers happy.</h4>
+          <h4>
+            We use the fasted frameworks that make google, you and your customers happy. Faster load times means{" "}
+            <span className="green-text">customers stay longer</span> to view your website!
+          </h4>
         </div>
         <div className="value__item">
-          <h3>Custom Designs with you in mind</h3>
-          <h4>Our websites are hand-coded to your business specifications. </h4>
+          <h3>Complete Project Management</h3>
+          <h4>
+            Sit back stress free as we handle everything from <span className="green-text">planning</span> to{" "}
+            <span className="green-text">completion</span>. We handle design,coding,and marketing for you!
+          </h4>
         </div>
       </div>
 
       <div className="problem__container">
         <div className="problem__container__inner">
-          <h4>Are you struggling to generate sales and leads for your business?</h4>
+          <h4>Are you struggling to generate sales and leads for your business? Do you need help with:</h4>
           <ul className="technique__list">
             <li>
               <div className="list__container">
@@ -66,7 +76,7 @@ const Offer = () => {
             <li>
               <div className="list__container">
                 <AiFillCheckCircle size={30} color={"var(--green)"} />
-                <p>Online Scalability</p>
+                <p>Ranking in Local Search Results </p>
               </div>
             </li>
           </ul>
@@ -75,7 +85,7 @@ const Offer = () => {
         <div className="problem__container__inner">
           <div className="problem__container__grid">
             <div className="problem__container__item">
-              <h3> You don&apos;t have the time to understand complex search engine optimization</h3>
+              <h3> You don&apos;t have the time to understand complex search engine optimization?</h3>
               <Image
                 src="/stopwatch.png"
                 alt="Stopwatch moving quickly in the wind"
@@ -85,7 +95,7 @@ const Offer = () => {
               />
             </div>
             <div className="problem__container__item">
-              <h3>Your website lacks a modern feel that is limiting your business growth</h3>
+              <h3>Your website lacks a modern feel that is limiting your business growth?</h3>
               <Image
                 src="/target-devices.png"
                 alt="Target symbol with devices"
@@ -95,7 +105,7 @@ const Offer = () => {
               />
             </div>
             <div className="problem__container__item">
-              <h3> Your website is slow and you don&apos;t understand how to fix it.</h3>
+              <h3> Your website is slow and you don&apos;t understand how to fix it?</h3>
               <Image
                 src="/funnel.png"
                 alt="Converting gears into money through a funnel"
@@ -125,12 +135,12 @@ const Offer = () => {
         </div>
         <div className="profile__description">
           <h4>
-            Hello. My name is Grant Growcott and I am a mobile application developer/ web developer. I started my
+            Hello. My name is Grant Growcott and I am a mobile application developer/web developer. I started my
             development journey when I began visiting boring financial and medical websites to realize that they lacked
             the design specifications needed to draw in users. Over time, I have honed my technique to create beautiful
             deliverables where businesses show customers they are professional and happy to serve. Whether it&apos;s
-            your dream mobile app, business website, or personal portfolio, we can deliver an excellent product at a
-            bargain price.
+            your dream mobile app, business website, or personal portfolio, we can deliver an excellent product that you
+            will love.
           </h4>
         </div>
         <div className="profile__image">
