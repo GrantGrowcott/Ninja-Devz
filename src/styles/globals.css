@@ -1201,7 +1201,7 @@ align-content: flex-start;
   background-color: var(--lightGrey);
   border-radius: 30px;
   text-align: center;
-  padding: 1.5em;
+  padding: 1em;
 }
 .plan__container__item h3{
   font-size: 1rem;
@@ -1225,7 +1225,7 @@ align-content: flex-start;
 
   .plan__container__item {
     min-height: 200px;
-    padding: 3.5em;
+    padding: 1em;
   }
 }
 
@@ -1238,7 +1238,8 @@ align-content: flex-start;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 8em;
+  margin: 8em 0;
+  padding: 0 4em;
 }
 
 /* 404 Page Styles */

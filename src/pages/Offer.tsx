@@ -43,7 +43,7 @@ const Offer = () => {
           </h4>
         </div>
         <div className="value__item">
-          <h3>Complete Project Management</h3>
+          <h3>End to End Project Management</h3>
           <h4>
             Sit back stress free as we handle everything from <span className="green-text">planning</span> to{" "}
             <span className="green-text">completion</span>. We handle design,coding,and marketing for you!
@@ -64,13 +64,25 @@ const Offer = () => {
             <li>
               <div className="list__container">
                 <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Company Identity/Branding</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
                 <p>SEO</p>
               </div>
             </li>
             <li>
               <div className="list__container">
                 <AiFillCheckCircle size={30} color={"var(--green)"} />
-                <p> Modern Design</p>
+                <p>Designing a Modern Website</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Organic Content Creation </p>
               </div>
             </li>
             <li>
@@ -165,16 +177,130 @@ const Offer = () => {
           <h5>
             We work with you and your team to design a custom plan based on your needs. No stone is left unturned.
           </h5>
+          <ul className="technique__list">
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Stakeholder Interviews</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Kickoff Call</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Discovery Call</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Business and Design Survey</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Signing of Contract </p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Project Brief</p>
+              </div>
+            </li>
+          </ul>
         </div>
         <div className="plan__container__item">
           <h3>Step 2</h3>
           <h4>Create</h4>
           <h5> Once you have approved the plan, our team will work efficiently to create your dream products.</h5>
+          <ul className="technique__list">
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>SEO Keyword Research</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Wireframe Design</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Design and Creation of Website</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Creation/Collection of Assets</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Browser Testing </p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Feedback Meetings</p>
+              </div>
+            </li>
+          </ul>
         </div>
         <div className="plan__container__item">
           <h3>Step 3</h3>
           <h4>Launch</h4>
           <h5> Your website is launched. We tinker in the background to ensure optimal traffic and satisfaction.</h5>
+          <ul className="technique__list">
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Site Map Maintenance</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Ongoing Communication</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Warranty Period Post Launch</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Future Support Options</p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Webinar Q & A Training </p>
+              </div>
+            </li>
+            <li>
+              <div className="list__container">
+                <AiFillCheckCircle size={30} color={"var(--green)"} />
+                <p>Local Ranking Assistance </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="center__container">
