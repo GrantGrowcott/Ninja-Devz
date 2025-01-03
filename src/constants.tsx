@@ -21,6 +21,8 @@ const funnel = "../public/funnel.png";
 const grant = "../public/grant.png";
 
 const checkMark = 30;
+const lawIcon = 50;
+const blueIcon = "#1583F8";
 
 export {
   ninja,
@@ -44,4 +46,6 @@ export {
   funnel,
   grant,
   checkMark,
+  lawIcon,
+  blueIcon
 };
