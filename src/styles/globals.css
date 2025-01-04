@@ -1371,7 +1371,7 @@ align-content: flex-start;
   background-color: var(--blue);
   cursor: pointer;
  }
-.law__cta__button h3{
+.law__cta__button h4{
  color: var(--white);
 }
 
@@ -1498,3 +1498,102 @@ margin-top: 5em;
     font-size: 2rem;
    }
 }
+
+/* Statistics Section */
+
+.statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.statistics__container {
+  flex:1;
+}
+
+.statistics__container__image {
+  flex:1;
+  text-align: center;
+}
+
+.statistics__container h3{
+  color: var(--black);
+  font-size: 1rem;
+  padding: 2em 0;
+}
+
+.statistics ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.statistics li {
+  position: relative; 
+  margin-bottom: 1.5em; 
+}
+
+
+
+@media screen and (max-width: 950px) {
+  .statistics {
+    flex-direction: column-reverse;
+  }
+
+  .statistics__container {
+    flex:1;
+    text-align: center;
+  }
+}
+
+/* Law Profile */
+.law__profile {
+  padding-top: 10em;
+}
+.black__center__text {
+  text-align: center;
+  color: var(--black);
+  font-size: 4rem;
+}
+.law__profile h3{
+  display: block;
+}
+.law__profile__phone__container {
+  display: flex;
+  justify-content: center;
+  align-Self: center;
+}
+.law__profile__phone__container p{
+  color: var(--black);
+}
+
+.law__profile__description {
+  padding: 0 2em;
+  text-align: center;
+}
+.law__profile__description h4{
+  color: var(--black);
+
+}
+.law__profile__image{
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+.law__profile__image img{
+  margin-top: 2em;
+  border-radius: 100px;
+  width: 15rem;
+  height: 15rem;
+}
+.law__profile__name {
+  text-align: center;
+}
+.law__profile__name h3{
+color: var(--blue);
+}
+
+
+
+

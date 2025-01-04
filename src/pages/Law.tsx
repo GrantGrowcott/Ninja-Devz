@@ -5,6 +5,7 @@ import { MdLocalCafe as Cup } from "react-icons/md";
 import { FaChartLine as Chart, FaBalanceScale as Scale } from "react-icons/fa";
 import { SiOrganicmaps as Organic } from "react-icons/si";
 import { lawIcon, blueIcon } from "@/constants";
+import ScheduleNow from "@/components/ScheduleNow";
 
 const Law = () => {
   return (
@@ -31,9 +32,7 @@ const Law = () => {
               Apply for your <span className="blue-text">20% discount today</span> on our SEO Services before time runs
               out. See how we can help you generate more leads today!!
             </h3>
-            <button className="law__cta__button">
-              <h3>Schedule Now</h3>
-            </button>
+            <ScheduleNow />
           </div>
           <div className="law__container__description__image">
             <Image
@@ -45,7 +44,6 @@ const Law = () => {
             />
           </div>
         </div>
-
         {/* Features Section */}
         <div className="features">
           <div className="features__title__container">
@@ -55,7 +53,6 @@ const Law = () => {
           <div className="features__offering">
             <h3>What we Offer to Your Firm</h3>
           </div>
-
           <div className="features__grid">
             <div className="features__grid__item">
               <Wrench size={lawIcon} color={blueIcon} />
@@ -101,6 +98,73 @@ const Law = () => {
             </div>
           </div>
         </div>
+
+        <div className="statistics">
+          <div className="statistics__container">
+            <ul>
+              <li>
+                <h3>
+                  Organic Search and Local Drive <span className="blue-text">69%</span> of Digital Traffic{" "}
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <span className="blue-text">80% </span>of consumers go online multiple times weekly to find local
+                  businesses.{" "}
+                </h3>
+              </li>
+            </ul>
+            <ScheduleNow />
+          </div>
+          <div className="statistics__container__image">
+            <Image
+              src="/phone-person.svg"
+              alt="Art of person standing beside a large phone with a bar graph"
+              width={539}
+              height={479}
+            />
+          </div>
+        </div>
+        <section className="law__profile">
+          <h3 className="black__center__text">Our Mission</h3>
+          <div className="law__profile__phone__container">
+            <p>-------</p>
+            <div className="law__profile__phone Image ">
+              <Image
+                src="/grant-blue.png"
+                alt="Vector graphic of Grant (The Founder)"
+                width={125}
+                height={125}
+                loading="lazy"
+              />
+            </div>
+            <p>-------</p>
+          </div>
+          <div className="law__profile__description">
+            <h4>
+              Hello. My name is Grant Growcott and I am a mobile application developer/ web developer. I started my
+              development journey when I began visiting boring financial and medical websites to realize that they
+              lacked the design specifications needed to draw in users. Over time, I have honed my technique to create
+              beautiful deliverables where businesses show customers they are professional and happy to serve. Whether
+              it&apos;s your dream mobile app, business website, or personal portfolio, we can deliver an excellent
+              product at a bargain price.
+            </h4>
+          </div>
+          <div className="law__profile__image">
+            <Image
+              src="/profile-pic.jpg"
+              alt="Grant Growcott Profile in Black and White"
+              width={200}
+              height={200}
+              loading="lazy"
+            />
+          </div>
+          <div className="law__profile__name">
+            <h3>Grant Growcott</h3>
+            <h4>Founder / Engineer</h4>
+          </div>
+        </section>
+
       </div>
     </div>
   );
