@@ -6,6 +6,7 @@ import { FaChartLine as Chart, FaBalanceScale as Scale } from "react-icons/fa";
 import { SiOrganicmaps as Organic } from "react-icons/si";
 import { lawIcon, blueIcon } from "@/constants";
 import ScheduleNow from "@/components/ScheduleNow";
+import ContactLaw from "@/components/ContactLaw";
 
 const Law = () => {
   return (
@@ -122,6 +123,7 @@ const Law = () => {
               alt="Art of person standing beside a large phone with a bar graph"
               width={539}
               height={479}
+              className="statistics__image"
             />
           </div>
         </div>
@@ -165,6 +167,24 @@ const Law = () => {
           </div>
         </section>
 
+        <div className="process">
+          <div className="process__title__container">
+            <Image src="/blue-handshake.png" alt="Shaking hands in blue" width={50} height={50} />
+            <h3>Process</h3>
+          </div>
+          <div className="process__offering">
+            <h3>What we Offer to Your Firm</h3>
+          </div>
+          <div className="process__steps">
+            <Image src="/step-one.png" width={300} height={300} alt="First process step of SEO" />
+            <Image src="/step-two.png" width={300} height={300} alt="Second process step of SEO" />
+            <Image src="/step-three.png" width={300} height={300} alt="Third process step of SEO" />
+            <Image src="/step-four.png" width={300} height={300} alt="Fourth process step of SEO" />
+          </div>
+        </div>
+        <div className="padding__container">
+          <ContactLaw />
+        </div>
       </div>
     </div>
   );
