@@ -24,6 +24,39 @@ const checkMark = 30;
 const lawIcon = 50;
 const blueIcon = "#1583F8";
 
+ const faqs = [
+  {
+    question: "Why does my law firm need SEO services?",
+    answer:
+      "SEO helps your law firm rank higher in search engine results, making it easier for potential clients to find your services online.",
+  },
+  {
+    question: "How long does it take to see SEO results for a law firm?",
+    answer:
+      "A professionally designed website enhances credibility, provides essential information, and offers an easy way for clients to contact you.",
+  },
+  {
+      question: "How do you measure the success of your SEO efforts?",
+      answer:
+        "Success is measured through key performance indicators (KPIs) such as increased website traffic, higher search rankings, more client inquiries, and ultimately, increased case leads.",
+    },
+    {
+      question: "What makes your SEO services different from others??",
+      answer:
+        "We offer tailored SEO strategies specifically for law firms, focusing on legal industry nuances, ensuring ethical compliance, and using proven techniques to enhance your online presence.",
+    },
+    {
+      question: "How can a blog benefit my law firm’s SEO?",
+      answer:
+        "Regularly updated blogs help position your firm as an authority in the legal field, provide valuable information to potential clients, and improve your website's SEO through fresh, relevant content.",
+    },
+    {
+      question: "How will your services help increase our firm’s leads and client base?",
+      answer:
+        "Through a combination of organic search traffic, paid advertising and detailed SEO strategies, we will generate more views on your website.",
+    },
+];
+
 export {
   ninja,
   smallNinja,
@@ -47,5 +80,6 @@ export {
   grant,
   checkMark,
   lawIcon,
-  blueIcon
+  blueIcon,
+  faqs
 };

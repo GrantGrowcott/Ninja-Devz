@@ -7,6 +7,7 @@ import { SiOrganicmaps as Organic } from "react-icons/si";
 import { lawIcon, blueIcon } from "@/constants";
 import ScheduleNow from "@/components/ScheduleNow";
 import ContactLaw from "@/components/ContactLaw";
+import FAQSection from "@/components/FAQSection";
 
 const Law = () => {
   return (
@@ -183,6 +184,7 @@ const Law = () => {
           </div>
         </div>
         <div className="padding__container">
+          <FAQSection />
           <ContactLaw />
         </div>
       </div>

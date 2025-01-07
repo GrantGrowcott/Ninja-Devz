@@ -1297,19 +1297,14 @@ align-content: flex-start;
    display: flex; 
    justify-content: center;
  }
-
  /* Law Section */
-
-
 .law {
   background-color: var(--white);
   font-family: "Spartan", sans-serif;
 }
-
 .law * {
   font-family: inherit;
 }
-
 .law__container{
   display: flex;
   flex-direction: row;
@@ -1317,9 +1312,6 @@ align-content: flex-start;
   align-items: flex-start;
   padding-top: 3rem;
 }
-
-
-
 .law__outer__container {
   margin: 0 auto;
   width: 80%;
@@ -1348,6 +1340,7 @@ align-content: flex-start;
 .law__container__description h1{
   font-size: 3rem;
   padding-bottom: 0.5em;
+  line-height: 1.2em;
 }
 
 .law__container__description h3{
@@ -1377,7 +1370,13 @@ align-content: flex-start;
  color: var(--white);
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 1200px) {
+
+  .law__container__description h1{
+    font-size: 2rem;
+    padding-bottom: 0.5em;
+    line-height: 1.2em;
+  }
   .law__container{
     flex-direction:column-reverse;
     align-items: center;
@@ -1397,7 +1396,9 @@ align-content: flex-start;
   .law__container__description {
     padding-right: 0;
   }
+
 }
+
 @media screen and (max-width: 650px) {
   .law__list {
     width: 60%;
@@ -1730,6 +1731,66 @@ color: var(--black);
 .padding__container {
   padding: 3em 0;
 }
+
+/* FAQ Section */
+.category__info__container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 10px;
+}
+.category__info__container h3 {
+  color: var(--background);
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  
+}
+.category__info__button {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  grid-row: span 1;
+  align-self: flex-start;
+}
+.category__info__button h3{
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 5px 10px;
+  border-style:solid;
+  border-radius: 30px;
+}
+.dropdown__menu__parent {
+  background-color: var(--black);
+}
+.dropdown__menu {
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-self: center;
+}
+.dropdown__menu button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.dropdown__menu__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cover__image {
+  width: 150px;
+  height: 225px;
+  aspect-ratio: 2/3;
+}
+.synopsis__container h3{
+  color: var(--black)
+}
+
+
+
 
 
 
