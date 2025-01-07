@@ -1732,32 +1732,40 @@ color: var(--black);
   padding: 3em 0;
 }
 
+
+
 /* FAQ Section */
 .category__info__container {
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 10px;
+  margin: 3em 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
 }
+
 .category__info__container h3 {
   color: var(--background);
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
-  
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
 }
+
 .category__info__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
-  border-style: none;
-  cursor: pointer;
-  grid-row: span 1;
-  align-self: flex-start;
+  border: none;
 }
+
 .category__info__button h3{
-  background-color: transparent;
-  border-radius: 30px;
-  padding: 5px 10px;
-  border-style:solid;
-  border-radius: 30px;
+  border-style: none;
 }
 .dropdown__menu__parent {
   background-color: var(--black);
@@ -1768,25 +1776,9 @@ color: var(--black);
   margin-top: 10px;
   align-self: center;
 }
-.dropdown__menu button {
-  background-color: transparent;
-  border: none;
-  padding: 5px;
-  margin: 5px 0;
-  cursor: pointer;
-}
-.dropdown__menu__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.cover__image {
-  width: 150px;
-  height: 225px;
-  aspect-ratio: 2/3;
-}
 .synopsis__container h3{
-  color: var(--black)
+  color: var(--lightGrey);
+  font-size: 1rem;
 }
 
 
