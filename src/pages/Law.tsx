@@ -183,8 +183,8 @@ const Law = () => {
             <Image src="/step-four.png" width={300} height={300} alt="Fourth process step of SEO" />
           </div>
         </div>
+        <FAQSection />
         <div className="padding__container">
-          <FAQSection />
           <ContactLaw />
         </div>
       </div>

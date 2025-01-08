@@ -28,12 +28,12 @@ const blueIcon = "#1583F8";
   {
     question: "Why does my law firm need SEO services?",
     answer:
-      "SEO helps your law firm rank higher in search engine results, making it easier for potential clients to find your services online.",
+      "Modern SEO strategies such as creating value added blogs and articles distinguish you firm from your competitors. This content will drive more traffic to your website thereby increasing the chances of acquiring new clients.",
   },
   {
     question: "How long does it take to see SEO results for a law firm?",
     answer:
-      "A professionally designed website enhances credibility, provides essential information, and offers an easy way for clients to contact you.",
+      "The effectiveness of SEO efforts varies depending on the competitiveness of your practice area, the consistency of content creation, and the quality of that content. You can typically expect to see meaningful results within 3 to 6 months. ",
   },
   {
       question: "How do you measure the success of your SEO efforts?",
@@ -41,9 +41,9 @@ const blueIcon = "#1583F8";
         "Success is measured through key performance indicators (KPIs) such as increased website traffic, higher search rankings, more client inquiries, and ultimately, increased case leads.",
     },
     {
-      question: "What makes your SEO services different from others??",
+      question: "What makes your SEO services different from others?",
       answer:
-        "We offer tailored SEO strategies specifically for law firms, focusing on legal industry nuances, ensuring ethical compliance, and using proven techniques to enhance your online presence.",
+        "We provide customized SEO strategies designed exclusively for law firms, emphasizing local keywords, and creating legal guides, case studies, and blogs. We also connect you with authoritative figures in your specialty to enhance your professional reputation.",
     },
     {
       question: "How can a blog benefit my law firm’s SEO?",
@@ -51,9 +51,9 @@ const blueIcon = "#1583F8";
         "Regularly updated blogs help position your firm as an authority in the legal field, provide valuable information to potential clients, and improve your website's SEO through fresh, relevant content.",
     },
     {
-      question: "How will your services help increase our firm’s leads and client base?",
+      question: "Do you only help with SEO strategies?",
       answer:
-        "Through a combination of organic search traffic, paid advertising and detailed SEO strategies, we will generate more views on your website.",
+        "We offer a comprehensive service that encompasses website design and development, analytics tracking, Google Ads management, and organic content creation, along with other essential SEO strategies tailored to your needs.",
     },
 ];
 
