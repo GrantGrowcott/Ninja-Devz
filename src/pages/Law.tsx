@@ -8,13 +8,18 @@ import { lawIcon, blueIcon } from "@/constants";
 import ScheduleNow from "@/components/ScheduleNow";
 import ContactLaw from "@/components/ContactLaw";
 import FAQSection from "@/components/FAQSection";
+import OfferTime from "@/components/OfferTime";
 
 const Law = () => {
   return (
+    <>
+    <OfferTime/>
     <div className="law">
       <div className="law__outer__container">
         <div className="law__container">
+        
           <div className="law__container__description ">
+          
             <h1>Specialized SEO Services for Law Firms</h1>
             <ul className="law__list">
               <li>
@@ -189,6 +194,7 @@ const Law = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

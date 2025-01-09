@@ -27,6 +27,7 @@ a {
   --darkGreen: #003e29;
   --green: #2bbb35;
   --blue: #1583F8;
+  --red: #ff5733;
   --creme: #efeba7;
  }
 .green-text {
@@ -1748,7 +1749,6 @@ color: var(--black);
   cursor: pointer;
   text-align: left;
 }
-
 .category__info__container h3 {
   color: var(--black);
   word-wrap: break-word;
@@ -1756,10 +1756,8 @@ color: var(--black);
   margin: 0;
   text-decoration: none;
 }
-
 .category__info__container h4 {
   color: var(--black);
-  
 }
 .category__info__container:hover {
   border-right: none; 
@@ -1788,18 +1786,24 @@ color: var(--black);
   color: var(--lightGrey);
   font-size: 1rem;
 }
-
-
 @media screen and (max-width: 900px) {
   .synopsis__container {
     padding-right: 5em;
   }
 }
-
 @media screen and (max-width: 600px) {
   .synopsis__container {
     padding-right: 3em;
   }
+}
+.banner {
+  background-color: var(--red);
+  color: var(--white);
+  text-align: center;
+  padding: 0.5em 0;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 
