@@ -48,6 +48,8 @@ const Law = () => {
               width={546}
               height={468}
               className="law__hero__image"
+              priority = {true}
+              
             />
           </div>
         </div>
