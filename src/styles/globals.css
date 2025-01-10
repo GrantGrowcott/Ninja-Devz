@@ -628,11 +628,18 @@ color: var(--green);
 }
 @media screen and (max-width: 800px) {
 .home__intro {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 .touch__button h3{
     font-size: 0.75em;
-}    
+}
+.home__description {
+  text-align: center;
+  padding: 0;
+}
+.home__image {
+  text-align: center;
+}
 }
  @media screen and (max-width: 499px) {
     .home__outer__container {

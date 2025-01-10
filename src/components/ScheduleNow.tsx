@@ -1,8 +1,17 @@
+import { gtag_report_conversion } from "@/helpers/helpers";
 const ScheduleNow = () => {
   return (
-    <button className="law__cta__button">
-      <h4>Schedule Now</h4>
-    </button>
+    <a
+      href="https://calendly.com/admin-ninjadevz/60min"
+      onClick={(event) => {
+        event.preventDefault();
+        gtag_report_conversion("https://calendly.com/admin-ninjadevz/60min");
+      }}
+    >
+      <button className="law__cta__button">
+        <h4>Schedule Now</h4>
+      </button>
+    </a>
   );
 };
 
