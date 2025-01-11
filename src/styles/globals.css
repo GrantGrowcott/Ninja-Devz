@@ -14,6 +14,10 @@ a {
   text-decoration: none !important;
 }
 
+
+
+.lightGrey-text
+
 * {
   margin: 0;
   padding: 0;
@@ -531,8 +535,12 @@ color: var(--green);
 .product__item h1, .product__item__middle h1{
     padding: 0.5em 0em;
 }
+.product__item h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .product__item h5, .product__item__middle h5{
-   font-size: 2rem;
+   font-size: 1rem;
    color: var(--green);
    display: block;
 }
@@ -542,17 +550,16 @@ color: var(--green);
     text-align: center;
     height: 600px;
 }
-.product__item__middle__inner {
-   padding-top: 1.5em ;
-}
+
 .product__title {
     background-color: var(--black);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .product__title h3{
+   padding:1em 0;
+   margin-top:0;
    font-size: 1rem;
-   padding: 1em 0;
    border-bottom: 2px solid var(--white);
    display: block; 
 }
@@ -568,7 +575,7 @@ color: var(--green);
 }
 .list__container p{
     font-size: 0.85rem;
-    line-height: 2.75em;
+    line-height: 1.75em;
 }
 .list__styles li  {
     font-size: 0.8rem;
@@ -581,12 +588,16 @@ color: var(--green);
 .contact__button {
     background-color: transparent;
     cursor: pointer;
-    margin-top: 1em;
-    padding: 1em 2em;
+    padding: 0.2em 2em;
     border-color: var(--white);
     border-radius: 10px;
     border-style: solid;
     border-width: 0.5em;
+}
+
+.contact__button h4{
+  font-size: 0.85rem;
+  line-height: 1.75em;
 }
 .not_found {
     padding: 14em;
@@ -1757,14 +1768,23 @@ color: var(--black);
   text-align: left;
 }
 .category__info__container h3 {
-  color: var(--black);
   word-wrap: break-word;
   overflow-wrap: break-word;
   margin: 0;
   text-decoration: none;
 }
 .category__info__container h4 {
-  color: var(--black);
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+.grey-text {
+  color: var(--lightGrey)
 }
 .category__info__container:hover {
   border-right: none; 
@@ -1790,7 +1810,6 @@ color: var(--black);
   padding-right: 10em;
 }
 .synopsis__container h3{
-  color: var(--lightGrey);
   font-size: 1rem;
 }
 @media screen and (max-width: 900px) {

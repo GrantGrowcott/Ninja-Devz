@@ -24,6 +24,14 @@ const checkMark = 30;
 const lawIcon = 50;
 const blueIcon = "#1583F8";
 
+export type FAQProps = {
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+  textColor: string;
+};
+
  const faqs = [
   {
     question: "Why does my law firm need SEO services?",

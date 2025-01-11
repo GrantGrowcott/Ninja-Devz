@@ -9,6 +9,9 @@ import ScheduleNow from "@/components/ScheduleNow";
 import ContactLaw from "@/components/ContactLaw";
 import FAQSection from "@/components/FAQSection";
 import OfferTime from "@/components/OfferTime";
+import { faqs } from "@/constants";
+
+const isWhitePage = true
 
 const Law = () => {
   return (
@@ -187,9 +190,9 @@ const Law = () => {
               <Image src="/step-four.png" width={300} height={300} alt="Fourth process step of SEO" />
             </div>
           </div>
-          <FAQSection />
+          <FAQSection faqs={faqs} textColor={isWhitePage ? "black" : "white"} />
           <div className="padding__container">
-            <ContactLaw />
+            <ContactLaw  />
           </div>
         </div>
       </div>
