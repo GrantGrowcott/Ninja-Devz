@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { GetServerSideProps } from "next";
 import { gtag_report_conversion } from "@/helpers/helpers";
-import { faqs } from "@/constants";
+import { homeFaqs } from "@/constants";
 import FAQSection from "@/components/FAQSection";
 
 interface HomeProps {
@@ -251,7 +251,7 @@ const Home = ({ imageUrl }: HomeProps) => {
           </div>
         </section>
         <Products />
-        <FAQSection faqs = {faqs} textColor={isWhitePage ? "black" : "white"}/>
+        <FAQSection faqs = {homeFaqs} textColor={isWhitePage ? "black" : "white"}/>
       </div>
       <Footer />
     </main>
