@@ -1774,11 +1774,11 @@ color: var(--black);
   text-decoration: none;
 }
 .white-text {
-  color: white;
+  color: var(--white)
 }
 
 .black-text {
-  color: black;
+  color: var(--black)
 }
 .grey-text {
   color: var(--lightGrey)
