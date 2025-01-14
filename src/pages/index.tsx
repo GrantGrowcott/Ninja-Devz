@@ -7,7 +7,6 @@ import { GetServerSideProps } from "next";
 import { gtag_report_conversion } from "@/helpers/helpers";
 import { homeFaqs } from "@/constants";
 import FAQSection from "@/components/FAQSection";
-import BlogCategory from "@/components/BlogCategory";
 
 interface HomeProps {
   imageUrl: string;
@@ -253,7 +252,6 @@ const Home = ({ imageUrl }: HomeProps) => {
         </section>
         <Products />
         <FAQSection faqs = {homeFaqs} textColor={isWhitePage ? "black" : "white"}/>
-        {/* <BlogCategory/> */}
       </div>
       <Footer />
     </main>

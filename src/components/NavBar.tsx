@@ -40,6 +40,11 @@ function NavBar() {
               Contact
             </Link>
           </li>
+          <li className="nav-item">
+            <Link href="/Blog" className="nav-links" onClick={handleClick} >
+              Blog
+            </Link>
+          </li>
         </ul>
         <div className="nav-icon" onClick={handleClick}>
           {click ? (
