@@ -253,7 +253,7 @@ const Home = ({ imageUrl }: HomeProps) => {
         </section>
         <Products />
         <FAQSection faqs = {homeFaqs} textColor={isWhitePage ? "black" : "white"}/>
-        <BlogCategory/>
+        {/* <BlogCategory/> */}
       </div>
       <Footer />
     </main>
