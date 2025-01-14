@@ -1,17 +1,34 @@
-import Link from 'next/link';
+import Link from "next/link";
+import GreenNav from "@/components/GreenNav";
+import Image from "next/image";
 
 const Blog = () => {
   return (
-    <div>
-      <h1>Welcome to the Blog</h1>
-      <p>Select a category to explore:</p>
-      <button>
-        <Link href="/Blog/Legal">Go to Legal Blog</Link>
-      </button>
-      <button>
-        <Link href="/Blog/Medical">Go to Medical Blog</Link>
-      </button>
-    </div>
+    <>
+      <GreenNav />
+      <div className="blogs">
+        <h1>Welcome to our Blogs</h1>
+        <p>Select a category to explore:</p>
+        <div className="blog__navigation">
+          <div>
+            <button>
+              <Link href="/Blog/Legal">
+                <Image src="/law-button-pic.jpg" alt="Gavel on Table" width={300} height={300} priority={true} />
+                <h2>Legal Resources</h2>
+              </Link>
+            </button>
+          </div>
+          <div>
+            <button>
+              <Link href="/Blog/Medical">
+                <Image src="/medical-button-pic.jpg" alt="Gavel on Table" width={300} height={300} priority={true} />
+                <h2>Medical Resources</h2>
+              </Link>
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

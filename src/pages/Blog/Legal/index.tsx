@@ -1,22 +1,26 @@
-import Link from "next/link";
-
+import GreenNav from "@/components/GreenNav";
+import BlogTitleImage from "../components/BlogTitleImage";
 const LegalBlog = () => {
   return (
-    <div>
-      <h1>Legal Blog</h1>
-      <ul>
-        <li>
-          <button>
-            <Link href="/Blog/Legal/post1">Legal Post 1</Link>
-          </button>
-        </li>
-        <li>
-          <button>
-            <Link href="/Blog/Legal/post2">Legal Post 2</Link>
-          </button>
-        </li>
-      </ul>
-    </div>
+    <>
+    <GreenNav />
+      <div className="blog__posts">
+        <ul>
+          <BlogTitleImage 
+              href="/Blog/Legal/post1"
+              title="How to Help Law Firms with SEO Issues and other fun things"
+              imageSrc="/medical-button-pic.jpg"
+              imageAlt="Description of image 1"
+            />
+          <BlogTitleImage 
+              href="/Blog/Legal/post1"
+              title="5 Key Topics for your Legal Blog for maximum conversions"
+              imageSrc="/medical-button-pic.jpg"
+              imageAlt="Description of image 1"
+            />
+        </ul>
+      </div>
+    </>
   );
 };
 

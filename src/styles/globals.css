@@ -3,20 +3,20 @@
   src: local("RobotoMono-Medium"),
     url("../pages/fonts/RobotoMono-Medium.ttf") format("truetype");
 }
-
 @font-face {
   font-family: "Spartan";
   src: local("Spartan-Bold"),
     url("../pages/fonts/Spartan-Bold.ttf") format("truetype");
 }
-
 a {
   text-decoration: none !important;
 }
 
-
-
-.lightGrey-text
+.green__background {
+  background-color: var(--green);
+  height: 100px;
+  width: 100%;
+}
 
 * {
   margin: 0;
@@ -148,7 +148,7 @@ label {
   background-color: transparent;
   position: absolute;
   border-width: 15px; 
-  height: 200px;
+  height: 100px;
   width: 100%;
   z-index: 20;
   top: 0; 
@@ -1832,29 +1832,69 @@ color: var(--black);
 /* Blog Styles */
 
 .blogs {
-  margin-top: 7rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 5rem;
 }
-
 .blogs h1{
   color: var(--white);
-  font-size: 3rem;
 }
 
-.blog__button__container {
-  background-color: var(--green);
-  width: 600px;
-  text-align: center;
-  cursor: pointer;
+.blog__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 3rem 0;
 }
 
-.blog__button__container h2{
-  font-size: 2rem;
-  line-height: 2rem;
+@media screen and (max-width: 700px) {
+  .blog__navigation {
+    flex-direction: column;
+  }
 }
+
+/* Styles for Legal and Medical Blog Navigation */
+
+.blog__posts {
+  width: 60%;
+  margin: 5rem auto;
+  padding: 0; 
+}
+
+.blog__post {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px; 
+}
+
+.blog__post__orientation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog__post h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.blog__post__image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog__post button {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: #f8f9fa; 
+  border: none;
+  text-align: left;
+}
+
+
 
 
