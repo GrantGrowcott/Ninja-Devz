@@ -1776,7 +1776,6 @@ color: var(--black);
 .white-text {
   color: var(--white)
 }
-
 .black-text {
   color: var(--black)
 }
@@ -1830,6 +1829,32 @@ color: var(--black);
 }
 
 
+/* Blog Styles */
 
+.blogs {
+  margin-top: 7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs h1{
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.blog__button__container {
+  background-color: var(--green);
+  width: 600px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.blog__button__container h2{
+  font-size: 2rem;
+  line-height: 2rem;
+}
 
 

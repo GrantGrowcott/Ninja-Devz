@@ -10,6 +10,8 @@ import ContactLaw from "@/components/ContactLaw";
 import FAQSection from "@/components/FAQSection";
 import OfferTime from "@/components/OfferTime";
 import { faqs } from "@/constants";
+import Test from "@/components/Test";
+
 
 const isWhitePage = true
 
@@ -193,6 +195,8 @@ const Law = () => {
           <FAQSection faqs={faqs} textColor={isWhitePage ? "black" : "white"} />
           <div className="padding__container">
             <ContactLaw  />
+            
+            <Test category= "medical"/>
           </div>
         </div>
       </div>

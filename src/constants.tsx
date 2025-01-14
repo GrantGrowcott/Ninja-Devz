@@ -98,6 +98,8 @@ export const homeFaqs = [
     },
 ];
 
+export const blogCategories = ['Legal', 'Medical']
+
 export {
   ninja,
   smallNinja,
