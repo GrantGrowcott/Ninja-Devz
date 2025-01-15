@@ -11,9 +11,18 @@ const BlogTitleImage = ({ href, title, imageSrc, imageAlt }: TitleImageProps) =>
   return (
     <li className="blog__post">
       <button>
-        <Link href={href}>
+        <Link href={href ?? ""}>
           <div className="blog__post__orientation">
-            {imageSrc && <Image src={imageSrc} alt={imageAlt} width={200} height={200} className="blog__post__image" priority = {true}/>}
+            {imageSrc && (
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                width={200}
+                height={200}
+                className="blog__post__image"
+                priority={true}
+              />
+            )}
             <h2>{title}</h2>
           </div>
         </Link>
