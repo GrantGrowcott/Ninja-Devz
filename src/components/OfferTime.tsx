@@ -4,26 +4,16 @@ const OfferTime = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const storedEndDate = localStorage.getItem("endDate");
-    let endDate;
+    // Define the start and end dates
+    const endDate = new Date(Date.UTC(2025, 0, 19, 18, 0, 0));  // Jan 19, 2025 at 6 PM UTC
 
-    if (storedEndDate) {
-      endDate = new Date(storedEndDate);
-    } else {
-      // Set the start date to Jan 14th, 2025 at 6pm EST
-      const startDate = new Date(Date.UTC(2025, 0, 14, 23, 0, 0)); // UTC (Jan 14, 2025 at 6pm EST)
-      endDate = new Date(startDate);
-      endDate.setDate(startDate.getDate() + 5); // Set the end date 5 days later
-      localStorage.setItem("endDate", endDate.toISOString());
-    }
-
+    // Function to update the remaining time
     const updateTimeLeft = () => {
-      const now = new Date();
-      const difference = endDate.getTime() - now.getTime();
+      const now = new Date(); // Get the current time in local time
+      const difference = endDate.getTime() - now.getTime(); // Difference between now and end date
 
       if (difference <= 0) {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        clearInterval(interval);
       } else {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
@@ -34,11 +24,15 @@ const OfferTime = () => {
       }
     };
 
+    // Call the updateTimeLeft function initially
     updateTimeLeft();
-    const interval = setInterval(updateTimeLeft, 1000);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+    // Set an interval to update the time every second
+    const intervalId = setInterval(updateTimeLeft, 1000);
+
+    // Cleanup the interval when the component unmounts or when the timer ends
+    return () => clearInterval(intervalId);
+  }, []); // Empty dependency array ensures this runs only once when the component mounts
 
   return (
     <div className="banner">

@@ -4,13 +4,11 @@ import { IoDocumentText as Document } from "react-icons/io5";
 import { MdLocalCafe as Cup } from "react-icons/md";
 import { FaChartLine as Chart, FaBalanceScale as Scale } from "react-icons/fa";
 import { SiOrganicmaps as Organic } from "react-icons/si";
-import { lawIcon, blueIcon } from "@/constants";
+import { lawIcon, blueIcon, faqs  } from "@/constants";
 import ScheduleNow from "@/components/ScheduleNow";
 import ContactLaw from "@/components/ContactLaw";
 import FAQSection from "@/components/FAQSection";
 import OfferTime from "@/components/OfferTime";
-import { faqs } from "@/constants";
-
 
 const isWhitePage = true
 
