@@ -1,6 +1,4 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -10,18 +8,21 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    turbo: { enabled: true }, // Correct way to enable Turbopack
+  },
   async headers() {
     const isDevelopment = process.env.NODE_ENV === 'development';
-    
+
     return [
       {
-        source: "/(.*)", // match all routes
+        source: "/(.*)",
         headers: [
           {
             key: "Cache-Control",
             value: isDevelopment
-              ? "no-store" // Disable caching during development
-              : "public, max-age=31536000, immutable", // Allow long caching in production
+              ? "no-store"
+              : "public, max-age=31536000, immutable",
           },
         ],
       },

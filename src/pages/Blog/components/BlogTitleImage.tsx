@@ -17,13 +17,15 @@ const BlogTitleImage = ({ href, title, imageSrc, imageAlt }: TitleImageProps) =>
               <Image
                 src={imageSrc}
                 alt={imageAlt}
-                width={200}
-                height={200}
+                width={500}
+                height={500}
                 className="blog__post__image"
                 priority={true}
               />
             )}
-            <h2>{title}</h2>
+            <div className="blog__post__title">
+              <h2>{title}</h2>
+            </div>
           </div>
         </Link>
       </button>
