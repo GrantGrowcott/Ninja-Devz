@@ -10,7 +10,7 @@ const OfferTime = () => {
     if (storedEndDate) {
       endDate = new Date(storedEndDate);
     } else {
-      const startDate = new Date(Date.UTC(2025, 0, 9, 18, 0, 0));
+      const startDate = new Date(Date.UTC(2025, 0, 14, 23, 0, 0));
       //   Set Arbitrarily as Jan 9th 2025 at 1pm
       endDate = new Date(startDate);
       endDate.setDate(startDate.getDate() + 5);
