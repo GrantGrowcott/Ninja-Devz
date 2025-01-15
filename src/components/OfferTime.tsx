@@ -10,10 +10,10 @@ const OfferTime = () => {
     if (storedEndDate) {
       endDate = new Date(storedEndDate);
     } else {
-      const startDate = new Date(Date.UTC(2025, 0, 14, 23, 0, 0));
-      //   Set Arbitrarily as Jan 9th 2025 at 1pm
+      // Set the start date to Jan 14th, 2025 at 6pm EST
+      const startDate = new Date(Date.UTC(2025, 0, 14, 23, 0, 0)); // UTC (Jan 14, 2025 at 6pm EST)
       endDate = new Date(startDate);
-      endDate.setDate(startDate.getDate() + 5);
+      endDate.setDate(startDate.getDate() + 5); // Set the end date 5 days later
       localStorage.setItem("endDate", endDate.toISOString());
     }
 
@@ -33,9 +33,11 @@ const OfferTime = () => {
         setTimeLeft({ days, hours, minutes, seconds });
       }
     };
+
     updateTimeLeft();
     const interval = setInterval(updateTimeLeft, 1000);
-    return () => clearInterval(interval);
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
   return (
