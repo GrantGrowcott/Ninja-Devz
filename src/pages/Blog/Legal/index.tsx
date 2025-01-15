@@ -11,6 +11,7 @@ const LegalBlog = () => {
               title="How to Help Law Firms with SEO Issues and other fun things"
               imageSrc="/medical-button-pic.jpg"
               imageAlt="Description of image 1"
+              
             />
           <BlogTitleImage 
               href="/Blog/Legal/post1"
