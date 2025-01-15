@@ -1,7 +1,4 @@
-// next.config.ts
-import { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -10,6 +7,9 @@ const nextConfig: NextConfig = {
         hostname: 'res.cloudinary.com',
       },
     ],
+  },
+  experimental: {
+    turbopack: true, // This would now be a valid option in a newer Next.js version
   },
   async headers() {
     const isDevelopment = process.env.NODE_ENV === 'development';
