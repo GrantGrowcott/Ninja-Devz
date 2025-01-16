@@ -26,7 +26,7 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/About" className="nav-links" onClick={handleClick} >
+            <Link href="/About" className="nav-links" onClick={handleClick}>
               About
             </Link>
           </li>
