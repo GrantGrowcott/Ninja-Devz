@@ -8,9 +8,7 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    turbopack: true, // This would now be a valid option in a newer Next.js version
-  },
+  
   async headers() {
     const isDevelopment = process.env.NODE_ENV === 'development';
 

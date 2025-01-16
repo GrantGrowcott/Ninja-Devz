@@ -9,7 +9,7 @@
     url("../pages/fonts/Spartan-Bold.ttf") format("truetype");
 }
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .green__background {
@@ -1910,28 +1910,41 @@ color: var(--black);
 }
 
 .breadcrumb-list {
+  display: flex;
   list-style: none;
   padding: 0;
-  display: flex;
-  gap: 5px;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .breadcrumb-list li {
-  display: inline;
+  display: flex;
+  align-items: center;
 }
 
 .breadcrumb-list li a {
+  color: var(--primary-color); /* Replace with your desired color */
   text-decoration: none;
-  color: var(--black)
 }
 
 .breadcrumb-list li a:hover {
   text-decoration: underline;
 }
 
-.breadcrumb-list li span {
-  color: gray;
+.breadcrumb-separator {
+  margin: 0 5px;
+  color: var(--separator-color); /* Replace with your desired separator color */
 }
+
+.breadcrumb-list li:last-child {
+  font-weight: bold;
+  color: var(--title-color); /* Replace with your desired title color */
+}
+
+.breadcrumb-list li:last-child a {
+  pointer-events: none; /* Optional: Disable the link if it's the current page */
+}
+
 
 .blog__background {
   background-color: var(--white);

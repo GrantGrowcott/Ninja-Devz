@@ -1,22 +1,29 @@
-import Link from "next/link";
+import GreenNav from "@/components/GreenNav";
+import BlogTitleImage from "../components/BlogTitleImage";
 
 const MedicalBlog = () => {
   return (
-    <div className="attributes">
-      <h1>Medical Blog</h1>
-      <ul>
-        <li>
-          <button>
-            <Link href="/Blog/Medical/post1">Medical Post 1</Link>
-          </button>
-        </li>
-        <li className="topper">
-          <button>
-            <Link href="/Blog/Medical/post2">Medical Post 2</Link>
-          </button>
-        </li>
-      </ul>
-    </div>
+    <>
+      <GreenNav />
+      <div className="blog__posts">
+        <ul>
+          <BlogTitleImage 
+            href="/Blog/Medical/Post1"
+            title="How to Help Doctors with SEO Issues"
+            imageSrc="/medical-button-pic.jpg"
+            imageAlt="Description of image 1"
+            
+          />
+          <BlogTitleImage 
+            href="/Blog/Medical/Post2"
+            title="Medical SEO Tips for 2025"
+            imageSrc="/medical-button-pic.jpg"
+            imageAlt="Description of image 2"
+            
+          />
+        </ul>
+      </div>
+    </>
   );
 };
 

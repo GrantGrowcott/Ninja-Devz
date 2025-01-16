@@ -11,7 +11,7 @@ const BlogTitleImage = ({ href, title, imageSrc, imageAlt }: TitleImageProps) =>
   return (
     <li className="blog__post">
       <button>
-        <Link href={href ?? ""}>
+      <Link href={`${href}?title=${encodeURIComponent(title)}`}>
           <div className="blog__post__orientation">
             {imageSrc && (
               <Image
