@@ -1929,6 +1929,8 @@ color: var(--black);
 .breadcrumb-list li:last-child a {
   pointer-events: none; 
 }
+
+/* Blog Styles (Generic) */
 .blog__background {
   background-color: var(--white);
 }
@@ -1936,6 +1938,24 @@ color: var(--black);
   width:80%;
   margin: 0 auto;
   padding: 4rem 0
+}
+.blog__layout h1{
+  font-size: 3rem;
+  padding: 0.5em 0;
+}
+.blog__author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.blog__author p{
+ font-size: 1rem;
+ color: var(--lightGrey);
+ padding: 1em 0;
+ margin-left: 0.5em;
+}
+.blog__post__content p{
+  color: var(--black);
 }
 
 
