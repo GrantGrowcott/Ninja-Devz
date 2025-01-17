@@ -1,21 +1,15 @@
+// pages/Blog/Legal/post1.tsx
 import { useRouter } from "next/router";
-import BreadCrumbsLaw from "../components/BreadCrumbsLaw"; 
-import GreenNav from "@/components/GreenNav";
+import PostPageLayoutLaw from "../components/PageLayoutLaw";
 
 const Post2 = () => {
   const router = useRouter();
   const { title } = router.query;
 
   return (
-    <>
-      <GreenNav />
-      <div className="blog__background">
-        <div className="blog__layout">
-          <BreadCrumbsLaw title={decodeURIComponent(title as string)} />
-          <h1>{decodeURIComponent(title as string)}</h1>
-        </div>
-      </div>
-    </>
+    <PostPageLayoutLaw title={decodeURIComponent(title as string)}>
+      <p>Content of the blog post will go here...</p>
+    </PostPageLayoutLaw>
   );
 };
 

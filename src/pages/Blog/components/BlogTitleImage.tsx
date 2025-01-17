@@ -17,8 +17,8 @@ const BlogTitleImage = ({ href, title, imageSrc, imageAlt }: TitleImageProps) =>
               <Image
                 src={imageSrc}
                 alt={imageAlt}
-                width={500}
-                height={500}
+                width={400}
+                height={300}
                 className="blog__post__image"
                 priority={true}
               />

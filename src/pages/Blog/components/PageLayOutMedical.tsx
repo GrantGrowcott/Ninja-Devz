@@ -1,19 +1,17 @@
-// components/PostPageLayout.tsx
 import GreenNav from "@/components/GreenNav";
-import BreadCrumbsLaw from "../components/BreadCrumbsLaw";
-
+import BreadCrumbsMedical from "./BreadCrumbsMedical";
 interface PostPageLayoutProps {
   title: string;
-  children: React.ReactNode; 
+  children: React.ReactNode;
 }
 
-const PostPageLayout = ({ title, children }: PostPageLayoutProps) => {
+const PostPageLayoutMedical = ({ title, children }: PostPageLayoutProps) => {
   return (
     <div>
       <GreenNav />
       <div className="blog__background">
         <div className="blog__layout">
-          <BreadCrumbsLaw title={title} />
+          <BreadCrumbsMedical title={title} />
           <h1>{title}</h1>
           <div className="blog__post__content">{children}</div>
         </div>
@@ -22,4 +20,4 @@ const PostPageLayout = ({ title, children }: PostPageLayoutProps) => {
   );
 };
 
-export default PostPageLayout;
+export default PostPageLayoutMedical;
