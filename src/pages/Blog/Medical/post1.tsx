@@ -1,23 +1,15 @@
 import { useRouter } from "next/router";
-import BreadCrumbsMedical from "../components/BreadCrumbsMedical";
-import GreenNav from "@/components/GreenNav";
+import PostPageLayoutMedical from "../components/PageLayOutMedical";
 
 const Post1 = () => {
   const router = useRouter();
   const { title } = router.query;
 
   return (
-    <>
-      <GreenNav />
-      <div className="blog__background">
-        <div className="blog__layout">
-          <BreadCrumbsMedical title={decodeURIComponent(title as string)} />
-          <h1>{decodeURIComponent(title as string)}</h1>
-        </div>
-      </div>
-    </>
+    <PostPageLayoutMedical title={decodeURIComponent(title as string)}>
+      <p>Content of the blog post will go here...</p>
+    </PostPageLayoutMedical>
   );
 };
 
 export default Post1;
-

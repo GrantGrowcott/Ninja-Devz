@@ -7,11 +7,15 @@ interface TitleImageProps {
   imageAlt: string;
 }
 
-const BlogTitleImage = ({ href, title, imageSrc, imageAlt }: TitleImageProps) => {
+
+
+
+const BlogTitleImage = ({ title, href,imageSrc, imageAlt }: TitleImageProps) => {
+  
   return (
     <li className="blog__post">
       <button>
-      <Link href={`${href}?title=${encodeURIComponent(title)}`}>
+      <Link href={`${href}`}>
           <div className="blog__post__orientation">
             {imageSrc && (
               <Image

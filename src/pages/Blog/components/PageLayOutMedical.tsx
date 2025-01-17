@@ -1,18 +1,25 @@
 import GreenNav from "@/components/GreenNav";
-import BreadCrumbsMedical from "./BreadCrumbsMedical";
+import BreadCrumbs from "./BreadCrumbs";
+import { useRouter } from "next/router";
 interface PostPageLayoutProps {
-  title: string;
   children: React.ReactNode;
 }
 
-const PostPageLayoutMedical = ({ title, children }: PostPageLayoutProps) => {
+const PostPageLayoutMedical = ({  children }: PostPageLayoutProps) => {
+
+  const router = useRouter();
+    const { asPath } = router;
+  
+     const lastSegment = asPath.split('/').pop() || "";
+  
+     const formattedTitle = lastSegment.replace(/-/g, " ");
   return (
     <div>
       <GreenNav />
       <div className="blog__background">
         <div className="blog__layout">
-          <BreadCrumbsMedical title={title} />
-          <h1>{title}</h1>
+          <BreadCrumbs category="Medical"  />
+          <h1>{formattedTitle}</h1>
           <div className="blog__post__content">{children}</div>
         </div>
       </div>
