@@ -26,7 +26,10 @@ const BreadCrumbs = ({category}: BreadCrumbsProps) => {
           <Link href={`/Blog/${category}`}> {category} Blogs</Link>
         </li>
         <li>
-          <a>/ {formattedTitle}</a>
+          <span className="breadcrumb-separator">/</span>
+        </li>
+        <li>
+          <a> {formattedTitle}</a>
         </li>
       </ol>
     </nav>

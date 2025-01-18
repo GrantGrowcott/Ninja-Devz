@@ -9,9 +9,11 @@ interface PostPageLayoutProps {
   authorAltDescription: string;
   authorBio: string;
   authorName: string;
+  heroImage: string;
+  heroImageAltDescription: string;
 }
 
-const PostPageLayoutLaw = ({ authorImage, authorAltDescription, authorBio, authorName, children }: PostPageLayoutProps) => {
+const PostPageLayoutLaw = ({ authorImage, authorAltDescription, authorBio, authorName, heroImage, heroImageAltDescription, children }: PostPageLayoutProps) => {
   const router = useRouter();
   const { asPath } = router;
 
@@ -25,7 +27,7 @@ const PostPageLayoutLaw = ({ authorImage, authorAltDescription, authorBio, autho
         <div className="blog__layout">
           <BreadCrumbs category="Legal" />
           <h1>{formattedTitle}</h1>
-          <AuthorTemplate authorImage = {authorImage} authorAltDescription = {authorAltDescription} authorBio = {authorBio} authorName = {authorName}/>
+          <AuthorTemplate authorImage = {authorImage} authorAltDescription = {authorAltDescription} authorBio = {authorBio} authorName = {authorName} heroImage = {heroImage}heroImageAltDescription= {heroImageAltDescription}/>
           <div className="blog__post__content">{children}</div>
         </div>
       </div>
