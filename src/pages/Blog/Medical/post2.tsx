@@ -1,12 +1,13 @@
-import { useRouter } from "next/router";
 import PostPageLayoutMedical from "../components/PageLayOutMedical";
 
 const Post2 = () => {
-  const router = useRouter();
-  const { title } = router.query;
-
   return (
-    <PostPageLayoutMedical title={decodeURIComponent(title as string)}>
+    <PostPageLayoutMedical
+      authorImage="/profile-pic.jpg"
+      authorAltDescription="Founder Grant Growcott"
+      authorBio="I hope you enjoy reading this blog post."
+      authorName=" Grant Growcott | Founder of Ninja Devz Web & Mobile Designs"
+    >
       <p>Content of the blog post will go here...</p>
     </PostPageLayoutMedical>
   );
