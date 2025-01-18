@@ -14,7 +14,7 @@ const LegalBlog = () => {
               
             />
           <BlogTitleImage 
-              href="/Blog/Legal/Post2"
+              href="/Blog/Legal/5-Key-Topics-for-your-Legal-Blog-for-maximum-conversions"
               title="5 Key Topics for your Legal Blog for maximum conversions"
               imageSrc="/medical-button-pic.jpg"
               imageAlt="Description of image 1"
