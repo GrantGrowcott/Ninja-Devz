@@ -9,7 +9,7 @@ const ScheduleNow = () => {
       }}
     >
       <button className="law__cta__button">
-        <h4>Schedule Now</h4>
+        <h4>Contact Now</h4>
       </button>
     </a>
   );
