@@ -7,9 +7,9 @@ const LegalBlog = () => {
       <div className="blog__posts">
         <ul>
           <BlogTitleImage 
-              href="/Blog/Legal/How-to-Help-Law-Firms-with-SEO-Issues-and-other-fun-things"
-              title="How to Help Law Firms with SEO Issues and other fun things"
-              imageSrc="/medical-button-pic.jpg"
+              href="/Blog/Legal/Must-Have-Law-Firm-Website-Features-to-Convert-Visitors-into-Clients"
+              title="Must Have Law Firm Website Features to Convert Visitors into Clients"
+              imageSrc="/post-1.png"
               imageAlt="Description of image 1"
               
             />
