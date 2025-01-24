@@ -25,7 +25,14 @@ const Post1 = () => {
         content creation.
       </p>
       <p>Here are the steps I will cover in this guide.</p>
-      <h2>Ensure your Meta Title and Description matches your client goals</h2>
+
+      <h2>1. Ensure your Meta Title and Description matches your client goals</h2>
+      <p>
+        Our goal here is to match the intent of the person searching in the their browser of choice (Google, Bing etc)
+        with the words we directly use on our website.{" "}
+        <span className="green-text">Specificity will be a proxy for competency.</span> The closer we are to matching
+        their search, the more likely they are too click on our website for our services.
+      </p>
       <p>
         The <span className="green-text">Meta title</span> is the first thing your potential customer will see. It is in
         large font and makes a big impact on whether a person will click on your website or go to your competitor.
@@ -60,12 +67,32 @@ const Post1 = () => {
         For the <span className="green-text">description</span>, list your primary areas of specialty,statements of
         authority such as your total years of experience and consider adding limited time deals such as free
         consultations or discounts.
+        <p>Ex:</p>
       </p>
       <ul>
         <li>New York&apos;s premier firm specializing in Personal Injury law for over 20 years.</li>
         <li>Serving Houston with trusted advice for your legal needs.</li>
         <li>20% off our local Family law services for a limited time.</li>
       </ul>
+      <p className="bold__post">An Important Point to Note:</p>
+      <p>
+        Make sure the meta description is under <span className="green-text">160 characters in length</span>.
+        Descriptions longer than this will be cut off on smaller screens.{" "}
+      </p>
+      <h2>Have an easily accessible Call-to-Action (CTA) Button or Form </h2>
+      <p>
+        We want our potential customers to know how to find out how to contact as quickly as possible. If you place your
+        form to far down the page (middle or bottom section), the viewer is more likely to click away from your page.
+      </p>
+      <p className="bold__post">Design your Call to Action using these key features:</p>
+      <ul>
+        <li>Contrasting Color from your background to stand out</li>
+        <li>Bold text</li>
+        <li>Language that is appropriate for attracting client such as &quot;Contact Us&quot;, &quot;Get in Touch&quot; or &quot;Let&apos;s Chat&quot;</li>
+      </ul>
+      <p>Here is an example:</p>
+      <Image src= "/hero-example.png" width={483} height={268} alt="Example Hero Section for Law Firm with Title and Subtitle" />
+      <p>Here we can see a Call-to-Action (CTA) button with a white background that creates a large amount of contrast with the dark blue background. It is highly visible and tells the user exactly what they are going to do. This is to be placed in the first section of the website (typically on the home page and is known as the hero section in technical terms)</p>
     </PostPageLayoutLaw>
   );
 };
