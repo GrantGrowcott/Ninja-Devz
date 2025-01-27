@@ -18,14 +18,14 @@ const Blog = () => {
               </Link>
             </button>
           </div>
-          <div>
+          {/* <div>
             <button>
               <Link href="/Blog/Medical">
                 <Image src="/medical-button-pic.jpg" alt="Gavel on Table" width={300} height={300} priority={true} />
                 <h2>Medical Resources</h2>
               </Link>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

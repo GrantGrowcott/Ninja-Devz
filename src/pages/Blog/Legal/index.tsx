@@ -16,7 +16,7 @@ const LegalBlog = () => {
           <BlogTitleImage 
               href="/Blog/Legal/5-Key-Topics-for-your-Legal-Blog-for-maximum-conversions"
               title="5 Key Topics for your Legal Blog for maximum conversions"
-              imageSrc="/medical-button-pic.jpg"
+              imageSrc="/post-1.png"
               imageAlt="Description of image 1"
 
             />
