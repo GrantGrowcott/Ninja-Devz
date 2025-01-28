@@ -17,12 +17,17 @@ const Offer = () => {
       </Head>
       <div className="offer__container">
         <div className="offer__container__inner">
-          <h1>Book Your Free Website Assessment!!!</h1>
-          <h2>
-            From building fast,scalable websites to improving search rankings and generating more leads,we deliver web
-            solutions that empower your business to thrive.
-          </h2>
-          <GetStartedButton />
+          <div className="offer__container__inner__description">
+            <h1>Book Your Free Website Assessment!!!</h1>
+            <h2>
+              From building fast,scalable websites to improving search rankings and generating more leads,we deliver web
+              solutions that empower your business to thrive.
+            </h2>
+            <GetStartedButton />
+          </div>
+          <div>
+            <Image src= "/transfer-money.svg" width={400} height={400} alt="Person Transferring Money"/>
+          </div>
         </div>
       </div>
 

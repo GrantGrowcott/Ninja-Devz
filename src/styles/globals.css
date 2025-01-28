@@ -1110,31 +1110,51 @@ align-content: flex-start;
 }
 .offer__container__inner {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  flex-wrap:wrap-reverse;
   width:80%;
   padding: 3rem 0;
   box-sizing: border-box;
+  gap: 20px;
 }
+
+
+@media screen and (max-width: 600px) {
+  .offer__container__inner img{
+    width: 300px;
+    height: 300px;
+  }
+}
+
 
 .offer__container h1{
   font-size: 3rem;
   font-weight: bold;
   max-width: 600px; 
   line-height: 1; 
-  text-align: center; 
+  text-align: left; 
   word-wrap: break-word; 
 }
 .offer__container h2 {
   font-size: 1.5rem;
   max-width: 600px; 
   line-height: 1.7; 
-  text-align: center;
+  text-align: left;
   word-wrap: break-word;
   padding-bottom: 4em;
 }
+
+@media screen and (max-width: 600px) {
+  .offer__container h1{
+    font-size: 2rem;
+  }
+  .offer__container h2 {
+    font-size: 1rem;
+  }
+}
+
 
 @media screen and (max-width: 500px) {
   .offer__container h1{
