@@ -39,10 +39,10 @@ const Services = () => {
               performance. Our code will outperform the standard wordpress and framework through or meticulous research
               and understanding of code and design.
             </h2>
-            <h3>
+            <h2>
               We recognize the importance of<span className="green-text"> optimizing internet traffic </span> for
               seamless connectivity and performance, a concept often overlooked but crucial for developers.
-            </h3>
+            </h2>
           </section>
         </div>
         <section className="logos__container">
