@@ -13,13 +13,13 @@ const LegalBlog = () => {
               imageAlt="Description of image 1"
               
             />
-          <BlogTitleImage 
+          {/* <BlogTitleImage 
               href="/Blog/Legal/5-Key-Topics-for-your-Legal-Blog-for-maximum-conversions"
               title="5 Key Topics for your Legal Blog for maximum conversions"
               imageSrc="/post-1.png"
               imageAlt="Description of image 1"
 
-            />
+            /> */}
         </ul>
       </div>
     </>

@@ -5,7 +5,8 @@ const OfferTime = () => {
 
   useEffect(() => {
     // Define the start and end dates
-    const endDate = new Date(Date.UTC(2025, 0, 24, 23, 0, 0)); 
+    const endDate = new Date(Date.UTC(2025, 0, 31, 23, 0, 0));
+
 
     // Function to update the remaining time
     const updateTimeLeft = () => {

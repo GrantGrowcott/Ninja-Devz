@@ -1,7 +1,5 @@
 const GreenNav = () => {
-    return ( <div className="green__background">
+  return <div className="green__background"></div>;
+};
 
-    </div> );
-}
- 
 export default GreenNav;

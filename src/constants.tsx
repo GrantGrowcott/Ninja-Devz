@@ -1,3 +1,4 @@
+
 const ninja = "https://res.cloudinary.com/dkvo68om8/image/upload/v1733000645/pec3obl7dcljnsycw7uf.png";
 const smallNinja = "https://res.cloudinary.com/dkvo68om8/image/upload/v1733011837/o5kzk8wrkp8sn10aif36.webp";
 
@@ -24,6 +25,9 @@ const checkMark = 30;
 const lawIcon = 50;
 const blueIcon = "#1583F8";
 
+
+
+
 export type FAQProps = {
   faqs: {
     question: string;
@@ -31,6 +35,40 @@ export type FAQProps = {
   }[];
   textColor: string;
 };
+
+export interface HomeProps {
+  imageUrl: string;
+}
+
+export interface PostPageLayoutProps {
+  children: React.ReactNode;
+  authorImage: string;
+  authorAltDescription: string;
+  authorBio: string;
+  authorName: string;
+  heroImage: string;
+  heroImageAltDescription: string;
+}
+
+export interface AuthorTemplateProps {
+  authorImage: string;
+  authorAltDescription: string;
+  authorBio: string;
+  authorName: string;
+  heroImage: string;
+  heroImageAltDescription: string;
+}
+
+export interface BreadCrumbsProps {
+  category: string;
+}
+
+export interface TitleImageProps {
+  href: string;
+  title: string;
+  imageSrc: string;
+  imageAlt: string;
+}
 
  const faqs = [
   {
@@ -99,6 +137,7 @@ export const homeFaqs = [
 ];
 
 export const blogCategories = ['Legal', 'Medical']
+
 
 export {
   ninja,

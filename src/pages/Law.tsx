@@ -4,17 +4,28 @@ import { IoDocumentText as Document } from "react-icons/io5";
 import { MdLocalCafe as Cup } from "react-icons/md";
 import { FaChartLine as Chart, FaBalanceScale as Scale } from "react-icons/fa";
 import { SiOrganicmaps as Organic } from "react-icons/si";
-import { lawIcon, blueIcon, faqs  } from "@/constants";
+import { lawIcon, blueIcon, faqs } from "@/constants";
 import ScheduleNow from "@/components/ScheduleNow";
 import ContactLaw from "@/components/ContactLaw";
 import FAQSection from "@/components/FAQSection";
 import OfferTime from "@/components/OfferTime";
+import Head from "next/head";
 
-const isWhitePage = true
 
 const Law = () => {
   return (
     <>
+      <Head>
+        <title>SEO & Web Development for Law Firms | Increase Clients & Boost Visibility</title>
+        <meta
+          name="description"
+          content="Boost your law firm's online presence with Ninja Devz's specialized SEO and web development services. From technical and local SEO to scalable web solutions, we help you dominate your local market, attract more clients, and establish your firm as an authority. Contact us today for a 20% discount!"
+        />
+        <link
+          rel="canonical"
+          href="https://ninjadevz.com/Blog/Legal/Must-Have-Law-Firm-Website-Features-to-Convert-Visitors-into-Clients"
+        />
+      </Head>
       <OfferTime />
       <div className="law">
         <div className="law__outer__container">
@@ -59,7 +70,7 @@ const Law = () => {
               <h3>Features</h3>
             </div>
             <div className="features__offering">
-              <h3>What we Offer to Your Firm</h3>
+              <h3>What We Offer To Your Firm</h3>
             </div>
             <div className="features__grid">
               <div className="features__grid__item">
@@ -74,36 +85,45 @@ const Law = () => {
                 <Document size={lawIcon} color={blueIcon} />
                 <h3>On-Page SEO</h3>
                 <h4>
-                Using keywords related to your field generates more organic traffic, which you don&apos;t have to pay for. Increased traffic will naturally lead to more clients.
+                  Using keywords related to your field generates more organic traffic, which you don&apos;t have to pay
+                  for. Increased traffic will naturally lead to more clients.
                 </h4>
               </div>
               <div className="features__grid__item">
                 <Cup size={lawIcon} color={blueIcon} />
                 <h3>Local SEO</h3>
-                <h4>By researching your local area, we identify the specific needs of your potential clients and ensure they can easily find you, helping your law firm rank higher in search results.</h4>
+                <h4>
+                  By researching your local area, we identify the specific needs of your potential clients and ensure
+                  they can easily find you, helping your law firm rank higher in search results.
+                </h4>
               </div>
               <div className="features__grid__item">
                 <Chart size={lawIcon} color={blueIcon} />
                 <h3>Performance Tracking</h3>
                 <h4>
-                By tracking key metrics on who visits your website, we gain insights to better tailor your services to meet clients&apos; needs. This data-driven approach also helps optimize your marketing strategies, ensuring more effective client acquisition and retention.
+                  By tracking key metrics on who visits your website, we gain insights to better tailor your services to
+                  meet clients&apos; needs. This data-driven approach also helps optimize your marketing strategies,
+                  ensuring more effective client acquisition and retention.
                 </h4>
               </div>
               <div className="features__grid__item">
                 <Organic size={lawIcon} color={blueIcon} />
                 <h3>Organic Content</h3>
                 <h4>
-                  A comprehensive plan is developed for long-term organic content creation, building credibility and establishing your firm as a trusted authority in the legal field.
+                  A comprehensive plan is developed for long-term organic content creation, building credibility and
+                  establishing your firm as a trusted authority in the legal field.
                 </h4>
               </div>
               <div className="features__grid__item">
                 <Scale size={lawIcon} color={blueIcon} />
                 <h3>Scalable Solutions </h3>
-                <h4>We utilize the best web frameworks to ensure your site is optimized for scalability, allowing your firm to grow and adapt as your business evolves.</h4>
+                <h4>
+                  We utilize the best web frameworks to ensure your site is optimized for scalability, allowing your
+                  firm to grow and adapt as your business evolves.
+                </h4>
               </div>
             </div>
           </div>
-
           <div className="statistics">
             <div className="statistics__container">
               <ul>
@@ -170,14 +190,13 @@ const Law = () => {
               <h4>Founder / Engineer</h4>
             </div>
           </section>
-
           <div className="process">
             <div className="process__title__container">
               <Image src="/blue-handshake.png" alt="Shaking hands in blue" width={50} height={50} />
               <h3>Process</h3>
             </div>
             <div className="process__offering">
-              <h3>What we Offer to Your Firm</h3>
+              <h3>What We Offer To Your Firm</h3>
             </div>
             <div className="process__steps">
               <Image src="/step-one.png" width={300} height={300} alt="First process step of SEO" />
@@ -186,9 +205,16 @@ const Law = () => {
               <Image src="/step-four.png" width={300} height={300} alt="Fourth process step of SEO" />
             </div>
           </div>
-          <FAQSection faqs={faqs} textColor={isWhitePage ? "black" : "white"} />
+          <FAQSection faqs={faqs} textColor="black" />
+          <div className="process__title__container">
+            <Image src="/list.svg" alt="Blue List " width={50} height={50} />
+            <h3 className="blue-text">Contact</h3>
+          </div>
+          <div className="process__offering">
+            <h3>How Can We Help You</h3>
+          </div>
           <div className="padding__container">
-            <ContactLaw  />
+            <ContactLaw />
           </div>
         </div>
       </div>

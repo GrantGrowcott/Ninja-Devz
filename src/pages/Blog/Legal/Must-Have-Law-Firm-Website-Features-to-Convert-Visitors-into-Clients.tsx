@@ -2,9 +2,11 @@ import PostPageLayoutLaw from "../components/PageLayoutLaw";
 import Image from "next/image";
 import Link from "next/link";
 import CTABlog from "../components/CTABlog";
+import Head from "next/head";
 
 const Post1 = () => {
   return (
+    
     <PostPageLayoutLaw
       authorImage="/profile-pic.jpg"
       authorAltDescription="Founder Grant Growcott"
@@ -13,6 +15,14 @@ const Post1 = () => {
       heroImage="/post-1.png"
       heroImageAltDescription="Lawyers talking together while standing"
     >
+      <Head>
+        <title>4 Proven Strategies for Law Firms to Convert Website Visitors into Clients</title>
+        <meta
+          name="description"
+          content="Discover how your law firm can attract more clients with SEO, fast-loading websites, strong CTAs, and client testimonials. Learn actionable tips to improve your online presence and boost conversions."
+        />
+        <link rel="canonical" href="https://ninjadevz.com/" />
+      </Head>
       <p>
         How can law firms convert their current and future traffic into consistent clients? This age old question is
         crucial to address for any novice or even established firm.
@@ -30,7 +40,7 @@ const Post1 = () => {
 
       <h2>1. Ensure your Meta Title and Description matches your client goals</h2>
       <p>
-        Our goal here is to match the intent of the person searching in the their browser of choice (Google, Bing etc)
+        Our goal is to match the intent of the person searching in the their browser of choice (Google, Bing etc)
         with the words we directly use on our website.{" "}
         <span className="green-text">Specificity will be a proxy for competency.</span> The closer we are to matching
         their search, the more likely they are too click on our website for our services.

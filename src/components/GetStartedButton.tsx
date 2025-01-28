@@ -3,10 +3,10 @@ import { gtag_report_conversion } from "@/helpers/helpers";
 const GetStartedButton = () => {
   return (
     <a
-      href="https://calendly.com/admin-ninjadevz/60min"
+      href="https://calendly.com/admin-ninjadevz/30min"
       onClick={(event) => {
         event.preventDefault();
-        gtag_report_conversion("https://calendly.com/admin-ninjadevz/60min");
+        gtag_report_conversion("https://calendly.com/admin-ninjadevz/30min");
       }}
     >
       <button type="button" name="Contact Us Button" className="touch__button">

@@ -1,14 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-interface TitleImageProps {
-  href: string;
-  title: string;
-  imageSrc: string;
-  imageAlt: string;
-}
-
-
-
+import { TitleImageProps } from "@/constants";
 
 const BlogTitleImage = ({ title, href,imageSrc, imageAlt }: TitleImageProps) => {
   

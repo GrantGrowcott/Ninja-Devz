@@ -7,10 +7,8 @@ import { GetServerSideProps } from "next";
 import { gtag_report_conversion } from "@/helpers/helpers";
 import { homeFaqs } from "@/constants";
 import FAQSection from "@/components/FAQSection";
+import { HomeProps } from "@/constants";
 
-interface HomeProps {
-  imageUrl: string;
-}
 export const getServerSideProps: GetServerSideProps = async () => {
   const imageUrl =
     "https://res.cloudinary.com/dkvo68om8/image/upload/f_auto,q_auto/v1733100825/y2piqivtxjwnsp5myxvq.webp";
@@ -22,9 +20,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-
-const isWhitePage = false
-
 const Home = ({ imageUrl }: HomeProps) => {
   return (
     <main>
@@ -35,7 +30,7 @@ const Home = ({ imageUrl }: HomeProps) => {
           name="description"
           content="Welcome to Ninja Devz, experts in crafting performative websites for growing enterprises. We offer ReactJS-based web development services with adaptable designs, rapid load times, and performance tracking. Learn more about our mission and services."
         />
-        <link rel="canonical" href="https://ninjadevz.com" />
+        <link rel="canonical" href="https://ninjadevz.com/Blog/Legal/Must-Have-Law-Firm-Website-Features-to-Convert-Visitors-into-Clients" />
       </Head>
       <section className="home__container">
         <div className="home__intro">
@@ -251,7 +246,7 @@ const Home = ({ imageUrl }: HomeProps) => {
           </div>
         </section>
         <Products />
-        <FAQSection faqs = {homeFaqs} textColor={isWhitePage ? "black" : "white"}/>
+        <FAQSection faqs = {homeFaqs} textColor= "white"/>
       </div>
       <Footer />
     </main>

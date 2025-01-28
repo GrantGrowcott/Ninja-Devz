@@ -1,13 +1,5 @@
 import Image from "next/image";
-
-interface AuthorTemplateProps {
-  authorImage: string;
-  authorAltDescription: string;
-  authorBio: string;
-  authorName: string;
-  heroImage: string;
-  heroImageAltDescription: string;
-}
+import { AuthorTemplateProps } from "@/constants";
 
 const AuthorTemplate = ({ authorImage, authorAltDescription, authorBio, authorName, heroImage, heroImageAltDescription }: AuthorTemplateProps) => {
   return (

@@ -1,17 +1,11 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-
-interface BreadCrumbsProps {
-  category: string;
-}
+import { BreadCrumbsProps } from "@/constants";
 
 const BreadCrumbs = ({category}: BreadCrumbsProps) => {
   const router = useRouter();
   const { asPath } = router;
-
-  const lastSegment = asPath.split('/').pop() || "";
-
-  const formattedTitle = lastSegment.replace(/-/g, " ");
+  const formattedTitle = asPath.split("/").pop()?.replace(/-/g, " ") || "";
   
   return (
     <nav aria-label="breadcrumb">

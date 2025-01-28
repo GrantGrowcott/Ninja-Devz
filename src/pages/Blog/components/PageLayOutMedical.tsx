@@ -2,24 +2,12 @@ import GreenNav from "@/components/GreenNav";
 import BreadCrumbs from "./BreadCrumbs";
 import { useRouter } from "next/router";
 import AuthorTemplate from "./AuthorTemplate";
-
-interface PostPageLayoutProps {
-  children: React.ReactNode;
-  authorImage: string;
-  authorAltDescription: string;
-  authorBio: string;
-  authorName: string;
-  heroImage: string;
-  heroImageAltDescription: string;
-}
+import { PostPageLayoutProps } from "@/constants";
 
 const PostPageLayoutMedical = ({ authorImage, authorAltDescription, authorBio, authorName, heroImage, heroImageAltDescription, children }: PostPageLayoutProps) => {
   const router = useRouter();
   const { asPath } = router;
-
-  const lastSegment = asPath.split("/").pop() || "";
-
-  const formattedTitle = lastSegment.replace(/-/g, " ");
+  const formattedTitle = asPath.split("/").pop()?.replace(/-/g, " ") || "";
   return (
     <div>
       <GreenNav />
