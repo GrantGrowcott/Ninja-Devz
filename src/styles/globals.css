@@ -1258,11 +1258,32 @@ align-content: flex-start;
 }
 
 .plan__container__item {
-  min-height: 400px;
+  min-height: 650px;
   background-color: var(--lightGrey);
   border-radius: 30px;
   text-align: center;
   padding: 1em;
+  
+}
+
+.plan__list {
+  list-style-type: none;
+  
+}
+
+.plan__list__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan__list__container p{
+  font-size: 0.85rem;
+  line-height: 1.75em;
+}
+
+.plan__list li{
+  margin: 2em 0;
 }
 .plan__container__item h3{
   font-size: 1rem;
@@ -1279,7 +1300,7 @@ align-content: flex-start;
   line-height: 2.5;
   margin-top: 1em;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1250px) {
   .plan__container {
     grid-template-columns: 1fr
   }
@@ -1287,6 +1308,26 @@ align-content: flex-start;
   .plan__container__item {
     min-height: 200px;
     padding: 1em;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .plan__container__item {
+    min-height: 200px;
+    padding: 1em;
+    width:80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .plan__container__item {
+    min-height: 200px;
+    padding: 1em;
+    width:90%;
+    margin: 0 auto;
   }
 }
 
@@ -1299,8 +1340,12 @@ align-content: flex-start;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8em 0;
-  padding: 0 4em;
+  margin: 2em 0;
+}
+
+.center__container h3{
+  font-size: 3rem;
+  color: var(--white);
 }
 /* 404 Page Styles */
 .error__container {
@@ -2087,6 +2132,49 @@ color: var(--black);
 @media (max-width: 700px) {
   .blog__cta img {
     display: none;
+  }
+}
+
+.contact__art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5em;
+}
+.contact__art h3{
+  color: var(--green);
+}
+
+.our__agreement {
+  text-align: center;
+  padding-top: 3em;
+  width:90%;
+  margin: 0 auto;
+}
+.our__agreement h3{
+color: var(--green);
+}
+
+.agreement__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+
+.agreement__item h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .agreement__grid {
+    grid-template-columns: 1fr;
+    
   }
 }
 

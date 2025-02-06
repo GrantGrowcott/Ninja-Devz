@@ -3,6 +3,7 @@ import Image from "next/image";
 import ContactEntry from "@/components/ContactEntry";
 import Head from "next/head";
 import { AiFillCheckCircle } from "react-icons/ai";
+import OurAgreement from "@/components/OurAgreement";
 
 const Offer = () => {
   return (
@@ -182,7 +183,7 @@ const Offer = () => {
           <h5>
             We work with you and your team to design a custom plan based on your needs. No stone is left unturned.
           </h5>
-          <ul className="technique__list">
+          <ul className="plan__list">
             <li>
               <div className="list__container">
                 <AiFillCheckCircle size={30} color={"var(--green)"} />
@@ -308,6 +309,14 @@ const Offer = () => {
           </ul>
         </div>
       </div>
+      <OurAgreement/>
+      <div className="contact__art">
+        <Image src= "/person.png" width={100} height={100} alt="Digital Person Upper Body"/>
+        <h3>Contact</h3>
+      </div>
+      {/* <div className="center__container">
+        <h3>Drop Us a Line</h3>
+      </div> */}
       <div className="center__container">
         <ContactEntry />
       </div>
