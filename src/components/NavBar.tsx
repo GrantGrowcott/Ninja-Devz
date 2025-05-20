@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/logo-text.png";
+import logo from "../../public/white-logo-text.png";
 import { AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai";
 
 function NavBar() {
@@ -41,7 +41,7 @@ function NavBar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/Blog" className="nav-links" onClick={handleClick} >
+            <Link href="/Blog" className="nav-links" onClick={handleClick}>
               Blog
             </Link>
           </li>

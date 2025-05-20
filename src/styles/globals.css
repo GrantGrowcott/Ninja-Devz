@@ -64,16 +64,11 @@ a,p,h1,h2,h3,h4, h5, label{
   font-weight: 500;
   font-style: normal;
 }
-h1 {
-  font-size: 4.5rem;
-  line-height: 1.25em;
-  color: var(--black);     
-}
 h2 {
   font-size: 1rem;
-  line-height: 3.5em;
+  line-height: 2.5em;
   color:var(--lightGrey);
-  padding-top: 1.75em;
+  
 }
 h3 {
   font-size: 1.5rem;
@@ -97,7 +92,7 @@ h3 {
   color: var(--green);
  }
  body {
-  background-color: var(--darkGrey);
+  background-color: var(--black);
 }
 label {
   color: var(--grey);
@@ -110,7 +105,7 @@ label {
 }
 @media screen and (max-width: 1200px){
   h1 {
-    font-size: 2.75rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1rem;
@@ -184,7 +179,7 @@ label {
     margin-top: 1.5rem; 
   }
   .nav-links {
-    color: var(--black);
+    color: var(--white);
     font-size: 1 rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -277,7 +272,7 @@ label {
 }
 .home__container {
     padding-top: 10em;
-    background-color: var(--green);
+    background-color: var(--black);
     height: 100vh;
 }
 .home__intro {
@@ -291,7 +286,22 @@ label {
 .home__description {
    flex:1;
    position: relative;
-   padding-right: 4em;
+   padding-right: 5em;
+  
+}
+
+.home__description h1{
+   font-size: 3.5rem;
+   line-height: 1.5em;
+   color: var(--green);
+    
+}
+
+.home__description h2{
+   color: var(--white);
+   line-height: 4em;
+   padding-right: 7em;
+  
 }
 .ninja-image {
     width: 29rem;
@@ -331,7 +341,7 @@ label {
     text-align: center;
 }
 .touch__button {
-    background-color: var(--darkGreen);
+    background-color: var(--green);
     padding: 1em 1.7em;
     border-radius: 30px;
     border: none;
@@ -341,7 +351,7 @@ label {
     box-shadow: 3px 3px 0 black;
     cursor: pointer;
     position: relative;
-    
+    margin-top: 1em;
     overflow: hidden;
     transition: 0.3s;
 }
@@ -374,6 +384,7 @@ label {
     font-size: 2em;
     z-index: 1;
     position: relative;
+    color: var(--black);
 }
 /* Scope Section */
 .scope__container {

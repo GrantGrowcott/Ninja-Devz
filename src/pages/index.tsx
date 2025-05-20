@@ -7,7 +7,6 @@ import { GetServerSideProps } from "next";
 import { gtag_report_conversion } from "@/helpers/helpers";
 import { homeFaqs } from "@/constants";
 import FAQSection from "@/components/FAQSection";
-import { HomeProps } from "@/constants";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const imageUrl =
@@ -20,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-const Home = ({ imageUrl }: HomeProps) => {
+const Home = () => {
   return (
     <main>
       <NavBar />
@@ -30,19 +29,19 @@ const Home = ({ imageUrl }: HomeProps) => {
           name="description"
           content="Welcome to Ninja Devz, experts in crafting performative websites for growing enterprises. We offer ReactJS-based web development services with adaptable designs, rapid load times, and performance tracking. Learn more about our mission and services."
         />
-        <link rel="canonical" href="https://ninjadevz.com/Blog/Legal/Must-Have-Law-Firm-Website-Features-to-Convert-Visitors-into-Clients" />
+        <link
+          rel="canonical"
+          href="https://ninjadevz.com/Blog/Legal/Must-Have-Law-Firm-Website-Features-to-Convert-Visitors-into-Clients"
+        />
       </Head>
       <section className="home__container">
         <div className="home__intro">
           <div className="home__description">
-            <h1>
-              <strong>Simple & Powerful</strong>
-              <br></br>
-              <strong>Websites!!</strong>
-            </h1>
+            <h1>Crafters of engaging websites that convert visitors into customers for your business.</h1>
             <h2>
-              Experts in crafting performative websites for growing enterprises!! We help you with branding, content
-              creation and SEO. Operate your business stress free. Click below for a free consultation!!!
+              Looking for expert Hamilton web design that actually performs? We specialize in crafting high-converting
+              websites for growing businesses in Hamilton. From branding and content creation to SEO, we help you
+              attract customers and operate stress free. Click below for a free consultation!!!
             </h2>
             <a
               href="https://calendly.com/admin-ninjadevz/60min"
@@ -57,7 +56,7 @@ const Home = ({ imageUrl }: HomeProps) => {
               </button>
             </a>
           </div>
-          <div className="home__image">
+          {/* <div className="home__image">
             <Image
               className="ninja-image"
               src={imageUrl}
@@ -69,7 +68,7 @@ const Home = ({ imageUrl }: HomeProps) => {
               style={{ borderRadius: "30px" }}
               loading="eager"
             />
-          </div>
+          </div> */}
         </div>
       </section>
       <div className="home__outer__container">
@@ -246,7 +245,7 @@ const Home = ({ imageUrl }: HomeProps) => {
           </div>
         </section>
         <Products />
-        <FAQSection faqs = {homeFaqs} textColor= "white"/>
+        <FAQSection faqs={homeFaqs} textColor="white" />
       </div>
       <Footer />
     </main>
