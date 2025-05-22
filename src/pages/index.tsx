@@ -56,19 +56,6 @@ const Home = () => {
               </button>
             </a>
           </div>
-          {/* <div className="home__image">
-            <Image
-              className="ninja-image"
-              src={imageUrl}
-              alt="Ninja at a computer"
-              width={464}
-              height={600}
-              sizes="(max-width: 450px) 150px, (max-width: 900px) 300px, 600px"
-              priority
-              style={{ borderRadius: "30px" }}
-              loading="eager"
-            />
-          </div> */}
         </div>
       </section>
       <div className="home__outer__container">
@@ -145,7 +132,7 @@ const Home = () => {
           <div className="pricing__container">
             <h3>
               <b className="green-text">No initial payment </b> required, with monthly payments of
-              <b className="green-text"> $200</b> for a minimum commitment of 12 months.
+              <b className="green-text"> $100</b> for a minimum commitment of 12 months.
             </h3>
             <h4 className="line__margin">
               $0 down-payment for a standard small business website. Further pricing considerations are negotiated based

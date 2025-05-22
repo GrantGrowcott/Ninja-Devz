@@ -1,12 +1,11 @@
-import ContactEntry from "@/components/ContactEntry";
-import { useRouter } from "next/router";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
+import ServicesButton from "@/components/ServicesButton";
+import ContactInformation from "@/components/ContactInformation";
 
 const About = () => {
-  const router = useRouter();
   return (
     <>
         <Head>
@@ -45,7 +44,7 @@ const About = () => {
         </section>
         <div className="topper">
           <h3 className="topper__container">
-            <b className="green-text"> Results </b> Are <b className="green-text">Guaranteed</b>
+            <b className="green-text">Results</b> Are <b className="green-text">Guaranteed</b>
           </h3>
           <h4>
             We will create a well structured plan and work continuously until we meet your expectations. No project is
@@ -70,36 +69,8 @@ const About = () => {
             <h4>We can make anything that you can think of. You are only limited by your imagination.</h4>
           </div>
         </section>
-        <div className="contact__us">
-          <button name="Services Button" type="button" onClick={() => router.push("/Services")}>
-            <h3>Our Services</h3>
-          </button>
-        </div>
-        <div className="contact">
-          <address className="contact__container">
-            <div className="contact__inner__container">
-              <div>
-              <Image src="/phone.png" alt="Phone Outline" width={50} height={50} loading="lazy" />
-              </div>
-              <div>
-                <h4>Phone:</h4>
-                <h4>(905) 517-0696</h4>
-              </div>
-            </div>
-            <div className="contact__inner__container">
-              <div>
-              <Image src="/mail.png" alt="Mail Icon" width={50} height={50} loading="lazy" />
-              </div>
-              <div>
-                <h4>Mail:</h4>
-                <h4>admin@ninjadevz.com</h4>
-              </div>
-            </div>
-          </address>
-          <div className="contact__container">
-            <ContactEntry />
-          </div>
-        </div>
+        <ServicesButton/>
+        <ContactInformation/>
         <Footer />
       </main>
     </>

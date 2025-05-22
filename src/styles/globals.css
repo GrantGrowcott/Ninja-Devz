@@ -28,7 +28,7 @@ a {
   --darkGrey: #1C1C1C;
   --black: #000000;
   --white: #FFFFFF;
-  --darkGreen: #003e29;
+  --darkGreen: #07640d;
   --green: #2bbb35;
   --blue: #1583F8;
   --red: #ff5733;
@@ -59,7 +59,7 @@ color: var(--blue)
    }
 }
 a,p,h1,h2,h3,h4, h5, label{
-  color: var(--white);
+  
   font-family: "Roboto Mono", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -387,9 +387,7 @@ label {
     color: var(--black);
 }
 /* Scope Section */
-.scope__container {
-    padding-top: 10em;
-}
+
 .scope__container h3{
     display: block
 }
@@ -398,8 +396,14 @@ label {
     justify-content: center;
     align-Self: center;
 }
-.scope__phone__container  p{
+
+.scope__container h4{
+    color: var(--white);
+    text-align: center;
+}
+.scope__phone__container p{
     color: var(--green);
+    
 }
 .scope__phone Image {
    height: 8rem;
@@ -410,7 +414,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 15em;
+    margin-top: 6em;
 }
 .attributes__container {
     flex: 1;
@@ -426,12 +430,15 @@ label {
 .attributes__container h3{
     color: var(--green);
 }
+.attributes__container h4{
+    color: var(--white);
+}
 /* Pricing Section */
 .pricing {
     display: flex;
     justify-content: center;
     align-Content: center;
-    margin-top: 15em;
+    margin-top: 6em;
 }
 .piggy__container {
     display: flex;
@@ -442,6 +449,9 @@ label {
 .pricing__container {
     flex: 1;
     text-align: center;
+}
+.pricing__container h4, .pricing__container h3{
+    color: var(--white);
 }
 .characteristics {
     display: flex;
@@ -474,7 +484,7 @@ label {
 }
 /* Profile Section */
 .profile {
-    padding-top: 10em;
+    padding-top: 6em;
 }
 .profile h3{
     display: block;
@@ -491,6 +501,9 @@ label {
 .profile__description {
     padding: 0 2em;
     text-align: center;
+}
+.profile__description h4{
+    color: var(--white);
 }
 .profile__image{
     display: flex;
@@ -509,15 +522,21 @@ label {
 .profile__name h3{
 color: var(--green);
 }
+.profile__name h4{
+color: var(--blue);
+}
 /* Product Section */
 .product {
-   padding-top: 15em; 
+   padding-top: 6em; 
 }
 .product__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 700px));
     gap: 10px;
     align-items: stretch; 
+}
+.product__grid h3{
+    color: var(--white);
 }
 .product__item, .product__item__middle {
     border-style: solid;
@@ -612,6 +631,7 @@ color: var(--green);
 .contact__button h4{
   font-size: 0.85rem;
   line-height: 1.75em;
+  color: var(--white);
 }
 .not_found {
     padding: 14em;
@@ -739,12 +759,23 @@ color: var(--green);
 .topper h3 {
    text-align: center;
    display: block;
+   color: var(--white);
+}
+
+.topper h4 {
+   text-align: center;
+   display: block;
+   color: var(--white);
 }
 .numbers {
    display: flex;
    justify-content: center;
    align-items: flex-start;
    gap: 50px
+}
+
+.numbers h3, .numbers h4{
+   color: var(--white);
 }
 .numbers__container {
    flex: 1;
@@ -781,6 +812,10 @@ color: var(--green);
 .contact__inner__container {
    flex: 1;
    display: flex; 
+}
+
+.contact__inner__container h4{
+   color: var(--white);
 } 
 .contact__inner__container img{
    height: 70px;
@@ -791,6 +826,10 @@ color: var(--green);
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.contact__us h3{
+   color: var(--white);
 }
 .contact__us button{
    background-color: transparent;
@@ -904,6 +943,10 @@ color: var(--green);
   align-items: center;
   margin-top: 15em;
 }
+
+.logos__container h4{
+  color: var(--white);
+}
 .logos__inner__container {
   flex: 1;
   text-align: left;  
@@ -974,6 +1017,20 @@ color: var(--green);
   line-height:2rem;
   display: inline-block;
 }
+
+
+.hamilton__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+.hamilton__container h1{
+  color: var(--white);
+}
+
+
+
 /* Updates Section */
 .update__container {
   display: flex;
@@ -981,6 +1038,13 @@ color: var(--green);
   align-items: center;
   margin-top: 15rem;
   gap:30px
+}
+.update__container h3{
+  color: var(--green);
+}
+
+.update__container h4{
+  color: var(--white);
 }
 .update__inner__container {
   flex:1;
@@ -1058,12 +1122,16 @@ align-content: flex-start;
   margin: 0 auto;
   gap: 10px;
   border-bottom: 2px solid var(--green);
+  color: var(--white);
 }
 .footer__container {
   flex: 1;
   text-align: center;
   align-content: center;
   min-height: 300px;
+}
+.footer__container h4{
+  color: var(--white);
 }
 .footer__list {
   text-align: left;

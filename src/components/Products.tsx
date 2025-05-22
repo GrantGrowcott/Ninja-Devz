@@ -16,7 +16,7 @@ const Products = () => {
             <li>
               <div className="list__container">
                 <AiFillCheckCircle size={checkMark} color={"var(--green)"} />
-                <p>$10,000 min. Up Front Cost</p>
+                <p>$5,000 min. Up Front Cost</p>
               </div>
             </li>
             <li>
@@ -46,7 +46,7 @@ const Products = () => {
           </div>
           <div className="product__item__middle__inner">
             <h4>Starting at</h4>
-            <h5>$200-$600/Mo</h5>
+            <h5>$100/Mo</h5>
             <ul className="list__styles">
               <li>
                 <div className="list__container">
