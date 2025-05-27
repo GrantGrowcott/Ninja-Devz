@@ -54,18 +54,18 @@ const Home = () => {
             mobile application dream come to reality through React Native.
           </h4>
         </section>
-        <section className="attributes">
-          <div className="attributes__container">
-            <Image src="/target-devices.png" alt="Target symbol with devices" width={100} height={100} loading="lazy" />
+        <section className="flex flex-col justify-center items-start mt-6 lg:flex-row gap-8">
+          <div className="flex flex-1 flex-col justify-center items-center text-center  py-4">
+            <Image src="/target-devices.png" alt="Target symbol with devices" width={200} height={200} loading="lazy" />
             <div>
-              <h3>Adaptable to all devices</h3>
-              <h4>
+              <h3 className="text-[var(--green)]">Adaptable to all devices</h3>
+              <h4 className="text-[var(--white)]">
                 Your website is crafted to appear flawless on all devices including: personal computers, tablets and
                 mobile phones
               </h4>
             </div>
           </div>
-          <div className="attributes__container">
+          <div className="flex flex-1 flex-col justify-center items-center text-center py-4">
             <Image
               src="/stopwatch.png"
               alt="Stopwatch moving quickly in the wind"
@@ -74,14 +74,14 @@ const Home = () => {
               loading="lazy"
             />
             <div>
-              <h3>Rapid Load Times</h3>
-              <h4>
+              <h3 className="text-[var(--green)]">Rapid Load Times</h3>
+              <h4 className="text-[var(--white)]">
                 We use a framework called ReactJS to ensure your customers aren&apos;t waiting to transfer between each
                 page of your website.
               </h4>
             </div>
           </div>
-          <div className="attributes__container">
+          <div className="flex flex-1 flex-col justify-center items-center text-center  py-4">
             <Image
               src="/funnel.png"
               alt="Converting gears into money through a funnel"
@@ -90,82 +90,82 @@ const Home = () => {
               loading="lazy"
             />
             <div>
-              <h3>Performance Tracking</h3>
-              <h4>
+              <h3 className="text-[var(--green)]">Performance Tracking</h3>
+              <h4 className="text-[var(--white)]">
                 All websites and mobile applications will be analyzed to understand user behavior, optimize content, and
                 increase conversions for your business.
               </h4>
             </div>
           </div>
         </section>
-        <section className="pricing">
-          <div className="piggy__container">
+        <section className="flex flex-col justify-center items-center mt-12 lg:flex-row ">
+          <div className="flex flex-1 items-center justify-center">
             <Image
               src="/piggy-bank.png"
               alt="Piggy Bank with Coins Art"
               className="piggy__image"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               loading="lazy"
             />
           </div>
-          <div className="pricing__container">
-            <h3>
+          <div className="flex-1 text-center">
+            <h3 className="text-[var(--white)]">
               <b className="green-text">No initial payment </b> required, with monthly payments of
-              <b className="green-text"> $100</b> for a minimum commitment of 12 months.
+              <b className="text-[var(--green)]"> $100</b> for a minimum commitment of 12 months.
             </h3>
-            <h4 className="line__margin">
+            <h4 className="text-[var(--white)]">
               $0 down-payment for a standard small business website. Further pricing considerations are negotiated based
               on the complexity and time required to produce the deliverable. We can purchase the domain, SSL
               certificate, and domain. You own everything, cancel at any time!!!
             </h4>
-            <div className="characteristics">
-              <div className="characteristics__container">
-                <div className="characteristics__inner__container">
-                  <div className="check__container">
+            <div className="flex flex-col md:flex-row content-center justify-center">
+              <div className="flex-1 mr-2">
+                <div className="flex justify-center content-center my-4">
+                  <div className="flex-1">
                     <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
                   </div>
-                  <div className="characteristics__content">
-                    <h3>No Additional Hosting Fees</h3>
-                    <h4>Hosting of the website and domain built into the overall cost.</h4>
+                  <div className="flex-3">
+                    <h3 className="text-[var(--green)]">No Additional Hosting Fees</h3>
+                    <h4 className="text-[var(--white)]">Hosting of the website and domain built into the overall cost.</h4>
                   </div>
                 </div>
-                <div className="characteristics__inner__container">
-                  <div className="check__container">
+                <div className="flex justify-center content-center my-4">
+                  <div className="flex-1 ">
                     <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
                   </div>
-                  <div className="characteristics__content">
-                    <h3>24/7 Customer Service</h3>
-                    <h4>Call directly at 905 -517-0696 for instantaneous help.</h4>
+                  <div className="flex-3">
+                    <h3 className="text-[var(--green)]">24/7 Customer Service</h3>
+                    <h4 className="text-[var(--white)]">Call directly at 905 -517-0696 for instantaneous help.</h4>
                   </div>
                 </div>
-                <div className="characteristics__inner__container">
-                  <div className="check__container">
+                <div className="flex justify-center content-center my-4">
+                  <div className="flex-1 ">
                     <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
                   </div>
-                  <div className="characteristics__content">
-                    <h3>Google Analytics</h3>
-                    <h4>We ensure your website is prioritized in search for maximum traffic.</h4>
+                  <div className="flex-3">
+                    <h3 className="text-[var(--green)]">Google Analytics</h3>
+                    <h4 className="text-[var(--white)]">We ensure your website is prioritized in search for maximum traffic.</h4>
                   </div>
                 </div>
               </div>
-              <div className="characteristics__container">
-                <div className="characteristics__inner__container">
-                  <div className="check__container">
+              <div className="flex-1">
+                <div className="flex justify-center content-center my-4">
+                  <div className="flex-1">
                     <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
                   </div>
-                  <div className="characteristics__content">
-                    <h3>Unlimited Edits</h3>
-                    <h4>Request changes with no hassle and results the day of contact.</h4>
+                  <div className="flex-3">
+                    <h3 className="text-[var(--green)]">Unlimited Edits</h3>
+                    <h4 className="text-[var(--white)]">Request changes with no hassle and results the day of contact.</h4>
                   </div>
                 </div>
-                <div className="characteristics__inner__container">
-                  <div className="check__container">
+                <div className="flex justify-center content-center my-4">
+                  <div className="flex-1">
                     <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
                   </div>
-                  <div className="characteristics__content">
-                    <h3>Web Design and Development</h3>
-                    <h4>Use of unique web designs layouts using modern web design principles</h4>
+                  <div className="flex-3">
+                    <h3 className="text-[var(--green)]">Web Design and Development</h3>
+                    <h4 className="text-[var(--white)]">Use of unique web designs layouts using modern web design principles</h4>
                   </div>
                 </div>
               </div>

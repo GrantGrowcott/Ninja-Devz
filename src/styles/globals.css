@@ -213,22 +213,6 @@ label {
       z-index:50; 
     } 
   }
-  /* Home Section */
-
-
-.home__graphic {
-    flex:1;
-    text-align: center;
-    margin-top: 2em;
-}
-.home__graphic img {
-   height: 18rem;
-   width: 18rem;
-}
-.home__intro p,
-.home__graphic p {
-    text-align: center;
-}
 .touch__button {
     background-color: var(--green);
     padding: 1em 1.7em;
@@ -276,80 +260,6 @@ label {
     color: var(--black);
 }
 
-
-/* Attributes Section */
-.attributes {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 6em;
-}
-.attributes__container {
-    flex: 1;
-    justify-items: center;
-    align-content: center;
-    text-align: center;
-    padding: 1em 4.0em;
-}
-.attributes__container img {
-    width: 15rem;
-    height: 15rem;
-}
-.attributes__container h3{
-    color: var(--green);
-}
-.attributes__container h4{
-    color: var(--white);
-}
-/* Pricing Section */
-.pricing {
-    display: flex;
-    justify-content: center;
-    align-Content: center;
-    margin-top: 6em;
-}
-.piggy__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pricing__container {
-    flex: 1;
-    text-align: center;
-}
-.pricing__container h4, .pricing__container h3{
-    color: var(--white);
-}
-.characteristics {
-    display: flex;
-    justify-content: center;
-    align-Content: center;
-}
-.characteristics__container {
-    flex:1;
-    margin-right: 20px;
-}
-.characteristics__inner__container {
-    display: flex;
-    justify-content: center;
-    align-Content: center;
-    margin: 3em 0;
-    min-height: 8rem;
-}
-.check__container {
-    flex: 1
-}
-.check__container img {
-    height: 3rem;
-    width: 3rem;
-}
-.characteristics__content {
-    flex: 3
-}
-.characteristics__content h3{
-    color: var(--green);
-}
 /* Profile Section */
 .profile {
     padding-top: 6em;
@@ -525,13 +435,6 @@ color: var(--blue);
     .touch__button h3{
         font-size: 1.5em;
     }
-
-    .attributes {
-        flex-direction: column;    
-    }
-    .pricing {
-        flex-direction: column;
-    }
     .characteristics {
         flex-direction: column;
     }
@@ -554,9 +457,6 @@ color: var(--blue);
  @media screen and (max-width: 499px) {
     .home__outer__container {
         width: 79%;
-    }
-    .attributes__container {
-        padding: 1em 0em;
     }
     .product__item {
         width: 300px
