@@ -14,8 +14,8 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link href="/" className="nav-logo">
-          <span className="icon">
+        <Link href="/" >
+          <span>
             <Image src={logo} alt="Ninja Devz Company Logo" width={190} height={70} />
           </span>
         </Link>

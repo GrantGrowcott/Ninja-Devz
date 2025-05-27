@@ -3,25 +3,14 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Image from "next/image";
-import { GetServerSideProps } from "next";
-import { gtag_report_conversion } from "@/helpers/helpers";
 import { homeFaqs } from "@/constants";
 import FAQSection from "@/components/FAQSection";
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  const imageUrl =
-    "https://res.cloudinary.com/dkvo68om8/image/upload/f_auto,q_auto/v1733100825/y2piqivtxjwnsp5myxvq.webp";
-  return {
-    props: {
-      imageUrl,
-      revalidate: 10,
-    },
-  };
-};
+import GetStartedButton from "@/components/GetStartedButton";
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <NavBar />
       <Head>
         <title>Ninja Devz | Web Development Services | Custom Websites & Mobile Apps</title>
@@ -29,46 +18,37 @@ const Home = () => {
           name="description"
           content="Welcome to Ninja Devz, experts in crafting performative websites for growing enterprises. We offer ReactJS-based web development services with adaptable designs, rapid load times, and performance tracking. Learn more about our mission and services."
         />
-        <link
+        <Link
           rel="canonical"
           href="https://ninjadevz.com/Blog/Legal/Must-Have-Law-Firm-Website-Features-to-Convert-Visitors-into-Clients"
         />
       </Head>
-      <section className="home__container">
-        <div className="home__intro">
-          <div className="home__description">
-            <h1>Crafters of engaging websites that convert visitors into customers for your business.</h1>
-            <h2>
+      <section className="pt-[10em] bg-[var(--black)] min-h-screen flex items-center justify-center">
+        <div className="w-[73%] mx-auto flex gap-[30px]">
+          <div className="flex-1 pr-5">
+            <h1 className="text-2xl md:text-5xl text-[var(--green)] leading-snug">
+              Crafters of engaging websites that convert visitors into customers for your business.
+            </h1>
+            <h2 className="text-[var(--white)] leading-10 mt-6">
               Looking for expert Hamilton web design that actually performs? We specialize in crafting high-converting
               websites for growing businesses in Hamilton. From branding and content creation to SEO, we help you
               attract customers and operate stress free. Click below for a free consultation!!!
             </h2>
-            <a
-              href="https://calendly.com/admin-ninjadevz/60min"
-              onClick={(event) => {
-                event.preventDefault();
-                gtag_report_conversion("https://calendly.com/admin-ninjadevz/60min");
-              }}
-            >
-              <button type="button" name="Contact Us Button" className="touch__button">
-                <h3>Get Started</h3>
-                <div className="wave"></div>
-              </button>
-            </a>
+            <GetStartedButton />
           </div>
         </div>
       </section>
-      <div className="home__outer__container">
-        <section className="scope__container">
-          <h3 className="centerText">Our Purpose</h3>
-          <div className="scope__phone__container">
+      <div className="w-[73%] mx-auto">
+        <section className="text-center">
+          <h3 className=" text-[var(--green)] ">Our Purpose</h3>
+          <div className="flex item-center justify-center">
             <p>-------</p>
-            <div className="scope__phone">
+            <div>
               <Image src="/phone.png" alt="Phone Icon" width={100} height={100} loading="lazy" />
             </div>
             <p>-------</p>
           </div>
-          <h4>
+          <h4 className="text-[var(--white)]">
             We concentrate on creating web designs for small to medium sized businesses in ReactJS. With accelerated
             processing over standard websites, more traffic will be generated for your enterprise. We can also make your
             mobile application dream come to reality through React Native.
@@ -235,7 +215,7 @@ const Home = () => {
         <FAQSection faqs={homeFaqs} textColor="white" />
       </div>
       <Footer />
-    </main>
+    </>
   );
 };
 
