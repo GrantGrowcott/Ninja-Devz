@@ -20,7 +20,7 @@ a {
   --darkGrey: #1C1C1C;
   --black: #000000;
   --white: #FFFFFF;
-  --darkGreen: #07640d;
+  --darkGreen: #043a08;
   --green: #2bbb35;
   --blue: #1583F8;
   --red: #ff5733;
@@ -56,14 +56,6 @@ a,p,h1,h2,h3,h4, h5, label{
   font-weight: 500;
   font-style: normal;
 }
-h3 {
-  font-size: 1.5rem;
-  display: inline-block;
- }
- h4 {
-  font-size: 1rem;
-  line-height:3rem;
- }
  h5 {
   font-size: 1.5rem;
   color: var(--white);
@@ -253,12 +245,6 @@ label {
   button:hover {
     box-shadow: 6px 6px 0 var(--black);
   }
-.touch__button h3{
-    font-size: 2em;
-    z-index: 1;
-    position: relative;
-    color: var(--black);
-}
 
 /* Profile Section */
 .profile {
@@ -428,13 +414,6 @@ color: var(--blue);
 }
 }
 @media screen and (max-width: 1200px) {
-    .touch__button {
-        position: relative;
-    }
-
-    .touch__button h3{
-        font-size: 1.5em;
-    }
     .characteristics {
         flex-direction: column;
     }
@@ -442,9 +421,6 @@ color: var(--blue);
 @media screen and (max-width: 800px) {
 .home__intro {
     flex-direction: column-reverse;
-}
-.touch__button h3{
-    font-size: 0.75em;
 }
 .home__description {
   text-align: center;

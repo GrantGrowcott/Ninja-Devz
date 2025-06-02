@@ -1,20 +1,11 @@
-module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}", 
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {
-      keyframes: {
-        wave: {
-          '0%': { backgroundPositionX: '0%' },
-          '100%': { backgroundPositionX: '200%' },
-        },
-      },
-      animation: {
-        wave: 'wave 2s linear infinite',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
+
+export default config;
