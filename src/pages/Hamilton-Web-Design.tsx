@@ -1,4 +1,5 @@
 import GetStartedButton from "@/components/GetStartedButton";
+import Image from "next/image";
 
 const HamiltonWebDesign = () => {
   return (
@@ -60,11 +61,11 @@ const HamiltonWebDesign = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-[var(--darkGreen)] text-center mt-12 p-20 rounded-xl">
-        <h3 className="text-[var(--green)] text-6xl mb-12 max-w-2xl mx-auto ">
+      <div className="bg-[var(--darkGreen)] text-center mt-12 p-6 md:p-20 rounded-xl">
+        <h3 className="text-[var(--green)] text-xl md:text-4xl mb-12 max-w-2xl mx-auto ">
           Your Guide to Growing Online with Confidence
         </h3>
-        <h4 className="text-[var(--white)] max-w-2xl mx-auto mb-12">
+        <h4 className="text-[var(--white)] text-base md:text-2xl max-w-2xl mx-auto mb-12">
           I know what it’s like to pour everything into a business and still feel invisible online. Like you, I’ve had
           to figure out how to stand out, build trust, and win clients in a competitive market. That’s why I care about
           helping local business owners in Hamilton succeed — not just with great-looking websites, but with clear
@@ -99,6 +100,106 @@ const HamiltonWebDesign = () => {
       </div>
       <div className="flex justify-center items-center mt-12 lg:mt-20 lg:ml-12 lg:justify-start lg:items-start">
         <GetStartedButton />
+      </div>
+      <h3 className="text-[var(--green)] text-center text-5xl my-24">Our 5 Step Plan for Success!!</h3>
+      <div className="grid grid-cols-5 gap-4 items-center">
+        <div className="col-span-5 lg:col-span-2 flex justify-center">
+          <Image src="/Step_1.svg" width={300} height={300} alt="Programmer at Computer" />
+        </div>
+        <div className="col-span-5 lg:col-span-3">
+          <h3 className="text-[var(--green)]">Step 1: Planning Stage</h3>
+          <h4 className="text-[var(--white)]">
+            Our process kicks off with a discovery call and stakeholder interviews to define your objectives and
+            challenges, followed by a kickoff meeting to determine key milestones, iterative revisions to refine the
+            solution, and finally the contract signing with first payment to formally launch the project.
+          </h4>
+        </div>
+        <div className="col-span-5 lg:col-span-2 flex justify-center">
+          <Image src="/Step_2.svg" width={300} height={300} alt="Programmer at Computer" />
+        </div>
+        <div className="col-span-5 lg:col-span-3">
+          <h3 className="text-[var(--green)]">Step 2: Content Stage</h3>
+          <h4 className="text-[var(--white)]">
+            We continue with a website audit, SEO keyword research, and a comprehensive project brief—followed by
+            sitemap creation, navigation wireframes, and a design survey—to ensure your site is strategically
+            structured, search-friendly, and aligned with your brand from the ground up.
+          </h4>
+        </div>
+        <div className="col-span-5 lg:col-span-2 flex justify-center">
+          <Image src="/Step_3.svg" width={300} height={300} alt="Programmer at Computer" />
+        </div>
+        <div className="col-span-5 lg:col-span-3">
+          <h3 className="text-[var(--green)]">Step 3: Design Stage</h3>
+          <h4 className="text-[var(--white)]">
+            We begin by understanding your business goals and collecting your branding assets to ensure everything
+            aligns with your vision. Then, we explore design directions through moodboards, allowing you to select the
+            style that fits best. From there, we create full website design comps and work with your feedback to refine
+            the final look before development begins.
+          </h4>
+        </div>
+        <div className="col-span-5 lg:col-span-2 flex justify-center">
+          <Image src="/Step_4.svg" width={300} height={300} alt="Programmer at Computer" />
+        </div>
+        <div className="col-span-5 lg:col-span-3">
+          <h3 className="text-[var(--green)]">Step 4: Build Stage</h3>
+          <h4 className="text-[var(--white)]">
+            Once the design is approved, we build out the pages, set up site navigation, and prototype any complex
+            features. We test across browsers, integrate your content, and refine the site based on your feedback until
+            it&apos;s ready to launch.
+          </h4>
+        </div>
+        <div className="col-span-5 lg:col-span-2 flex justify-center">
+          <Image src="/Step_5.svg" width={300} height={300} alt="Programmer at Computer" />
+        </div>
+        <div className=" col-span-5 lg:col-span-3">
+          <h3 className="text-[var(--green)]">Step 5: Launch Stage</h3>
+          <h4 className="text-[var(--white)]">
+            After launch, we provide a live Q&A training webinar to walk you through your new website and ensure
+            you&apos;re confident using it. We finalize the project with your approval, issue the final invoice, and
+            offer a warranty period along with optional ongoing support and marketing services to help your business
+            grow.
+          </h4>
+        </div>
+      </div>
+
+      <div className="bg-[var(--darkGreen)] p-24 rounded-2xl my-12">
+        <h3 className="text-[var(--green)] text-center text-4xl mb-12 ">Our Promise to You</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center">
+          <div className="col-span-1">
+            <h3 className="text-[var(--green)] text-2xl mb-6">Complete Coverage</h3>
+            <h4 className="text-[var(--white)] ">
+              Your website deserves full-circle care—from branding and design to hosting and copywriting. I deliver
+              custom websites that reflect your unique business and work seamlessly to attract and convert customers. No
+              corners cut, just end-to-end solutions built for growth.
+            </h4>
+          </div>
+          <div className="col-span-1">
+            <h3 className="text-[var(--green)] text-2xl mb-6">Tailored Designs</h3>
+            <h4 className="text-[var(--white)] ">
+              Your business is one of a kind—your website should be too. We design and develop custom websites that are
+              fully tailored to your brand, helping you stand out and connect with your audience authentically. No
+              templates, just strategic design built to drive results.
+            </h4>
+          </div>
+          <div className="col-span-1">
+            <h3 className="text-[var(--green)] text-2xl mb-6">Data Driven Decisions</h3>
+            <h4 className="text-[var(--white)] ">
+              We don’t just build beautiful websites — we make sure they work hard for your business. By integrating
+              advanced analytics and tracking tools, you gain clear insights into how visitors interact with your site.
+              This data lets you measure success, understand customer behavior, and make informed, data-driven decisions
+              to continually improve your online presence and boost your results.
+            </h4>
+          </div>
+          <div className="col-span-1">
+            <h3 className="text-[var(--green)] text-2xl mb-6">Fluid Process</h3>
+            <h4 className="text-[var(--white)] ">
+              Hosting, maintenance, and updates are often overlooked but critical for a successful website. We take care
+              of everything behind the scenes—ensuring your site stays secure from threats, loads quickly for every
+              visitor, and is always running the latest software and features. You can focus on your business while we
+              handle the technical upkeep, so your website remains reliable and performs at its best 24/7.
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
   );
