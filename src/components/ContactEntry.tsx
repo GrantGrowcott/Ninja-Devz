@@ -5,10 +5,11 @@ const ContactEntry = () => {
   if (state.succeeded) {
     return <p>We will get back to you as soon as possible!</p>;
   }
+
   return (
     <main className="contact__input__container green">
-      <form onSubmit={handleSubmit} action="https://formspree.io/f/mldrdeyo" method="POST">
-        <h4>
+      <form onSubmit={handleSubmit} action="https://formspree.io/f/mldrdeyo" method="POST" className="flex flex-col">
+        <h4 className="text-[var(--white)]">
           <span className="green-text">Contact</span> Us Anytime
         </h4>
         <label htmlFor="name">Name</label>
@@ -28,11 +29,13 @@ const ContactEntry = () => {
           Message
         </label>
         <textarea className="contact__messageinput" id="message" name="message" placeholder="How Can We Help You!!" />
-        <div className="submit__button__container">
-          <button className="submit__button" name="Submit Button" type="submit">
-            <h4>Submit</h4>
-          </button>
-        </div>
+        <button
+          name="Submit Button"
+          type="submit"
+          className="mt-6 cursor-pointer text-[var(--white)] border-[var(--green)] border-4 rounded-2xl inline-block  p-6 no-underline hover:no-underline w-[50%] mx-auto"
+        >
+          Submit
+        </button>
       </form>
     </main>
   );

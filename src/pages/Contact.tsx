@@ -17,18 +17,16 @@ const Contact = () => {
       </Head>
       <NavBar />
       <header></header>
-      <main className="contact__page">
-        <div className="contact__container">
-          <ContactEntry />
-        </div>
-        <address className="contact__container">
+      <main className="flex mt-12 flex-col lg:flex-row items-center justify-center">
+        <ContactEntry />
+        <address>
           <Image
             src="/contact-info.png"
             alt="Contact information for Grant Growcott. Email Address: admin@ninjadevz.com | Phone Number: (905)-517-0696"
             width={500}
             height={500}
             loading="lazy"
-            className="contact__image"
+            className="contact__image "
           />
         </address>
       </main>

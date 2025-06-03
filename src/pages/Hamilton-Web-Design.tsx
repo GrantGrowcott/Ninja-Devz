@@ -1,5 +1,6 @@
 import GetStartedButton from "@/components/GetStartedButton";
 import Image from "next/image";
+import ContactEntry from "@/components/ContactEntry";
 
 const HamiltonWebDesign = () => {
   return (
@@ -161,12 +162,11 @@ const HamiltonWebDesign = () => {
           </h4>
         </div>
       </div>
-
-      <div className="bg-[var(--darkGreen)] p-24 rounded-2xl my-12">
+      <div className="bg-[var(--darkGreen)] p-8 md:p-24 rounded-2xl my-12">
         <h3 className="text-[var(--green)] text-center text-4xl mb-12 ">Our Promise to You</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-center">
           <div className="col-span-1">
-            <h3 className="text-[var(--green)] text-2xl mb-6">Complete Coverage</h3>
+            <h3 className="text-[var(--green)] text-lg md:text-2xl mb-6">Complete Coverage</h3>
             <h4 className="text-[var(--white)] ">
               Your website deserves full-circle care—from branding and design to hosting and copywriting. I deliver
               custom websites that reflect your unique business and work seamlessly to attract and convert customers. No
@@ -174,7 +174,7 @@ const HamiltonWebDesign = () => {
             </h4>
           </div>
           <div className="col-span-1">
-            <h3 className="text-[var(--green)] text-2xl mb-6">Tailored Designs</h3>
+            <h3 className="text-[var(--green)] text-lg md:text-2xl mb-6">Tailored Designs</h3>
             <h4 className="text-[var(--white)] ">
               Your business is one of a kind—your website should be too. We design and develop custom websites that are
               fully tailored to your brand, helping you stand out and connect with your audience authentically. No
@@ -182,7 +182,7 @@ const HamiltonWebDesign = () => {
             </h4>
           </div>
           <div className="col-span-1">
-            <h3 className="text-[var(--green)] text-2xl mb-6">Data Driven Decisions</h3>
+            <h3 className="text-[var(--green)] text-lg md:text-2xl mb-6">Data Driven Decisions</h3>
             <h4 className="text-[var(--white)] ">
               We don’t just build beautiful websites — we make sure they work hard for your business. By integrating
               advanced analytics and tracking tools, you gain clear insights into how visitors interact with your site.
@@ -191,7 +191,7 @@ const HamiltonWebDesign = () => {
             </h4>
           </div>
           <div className="col-span-1">
-            <h3 className="text-[var(--green)] text-2xl mb-6">Fluid Process</h3>
+            <h3 className="text-[var(--green)] text-lg md:text-2xl mb-6">Fluid Process</h3>
             <h4 className="text-[var(--white)] ">
               Hosting, maintenance, and updates are often overlooked but critical for a successful website. We take care
               of everything behind the scenes—ensuring your site stays secure from threats, loads quickly for every
@@ -200,6 +200,26 @@ const HamiltonWebDesign = () => {
             </h4>
           </div>
         </div>
+      </div>
+      <div className="flex items-center  justify-center flex-col md:flex-row mx-auto max-w-6xl">
+        <div className="flex-1">
+          <h3 className="text-[var(--green)] text-3xl mb-6">Here’s what you get:</h3>
+          <ul className="text-[var(--white)] space-y-2 list-disc">
+            <li>One one One communication with our team of expert developers and content creators</li>
+            <li>Custom designs that you are proud to show off to the world</li>
+            <li>Modern day SEO and A.I strategies to outperform your competition</li>
+            <li>An assurance of 20% increase in net traffic within 6 months</li>
+          </ul>
+          <h4 className="text-[var(--white)] mt-6 mr-12">
+            You get all this, plus the confidence you’re living your best life when you partner with Ninja Devz today!
+          </h4>
+        </div>
+        <div className="flex-1">
+          <Image src="/Relax.svg" alt="Person relaxing on the beach under an umbrella" width={500} height={500} />
+        </div>
+      </div>
+      <div className="flex justify-center my-24">
+        <ContactEntry />
       </div>
     </div>
   );
