@@ -66,7 +66,7 @@ const HamiltonWebDesign = () => {
         <h3 className="text-[var(--green)] text-xl md:text-4xl mb-12 max-w-2xl mx-auto ">
           Your Guide to Growing Online with Confidence
         </h3>
-        <h4 className="text-[var(--white)] text-base md:text-2xl max-w-2xl mx-auto mb-12">
+        <h4 className="text-[var(--white)] text-base md:text-xl max-w-2xl mx-auto mb-12">
           I know what it’s like to pour everything into a business and still feel invisible online. Like you, I’ve had
           to figure out how to stand out, build trust, and win clients in a competitive market. That’s why I care about
           helping local business owners in Hamilton succeed — not just with great-looking websites, but with clear
