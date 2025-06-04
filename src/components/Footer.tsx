@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <address className="footer__container">
+        <address className="flex-1 flex flex-col items-center justify-center">
           <Image src={logo} alt="Ninja Devz Logo" width={190} height={70} />
           <h4>admin@ninjadevz.com</h4>
           <h4>(905)517-0696</h4>

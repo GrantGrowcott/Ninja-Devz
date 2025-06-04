@@ -21,7 +21,8 @@ const stopWatch = "../public/stopwatch.png";
 const funnel = "../public/funnel.png";
 const grant = "../public/grant.png";
 
-const checkMark = 30;
+const checkMark = 50;
+const productCheckMark = 35;
 const lawIcon = 50;
 const blueIcon = "#1583F8";
 
@@ -145,6 +146,7 @@ export {
   phone,
   piggyBank,
   checkCircle,
+  productCheckMark,
   profilePic,
   one,
   two,

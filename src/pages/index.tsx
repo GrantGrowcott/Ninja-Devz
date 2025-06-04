@@ -7,6 +7,7 @@ import { homeFaqs } from "@/constants";
 import FAQSection from "@/components/FAQSection";
 import GetStartedButton from "@/components/GetStartedButton";
 import Link from "next/link";
+import { checkMark } from "@/constants";
 
 const Home = () => {
   return (
@@ -40,12 +41,10 @@ const Home = () => {
       </section>
       <div className="w-[73%] mx-auto">
         <section className="text-center">
-          <h3 className=" text-[var(--green)] ">Our Purpose</h3>
-          <div className="flex item-center justify-center">
+          <h3 className="text-2xl text-[var(--green)] my-6">Our Purpose</h3>
+          <div className="flex item-center justify-center mb-12">
             <p>-------</p>
-            <div>
               <Image src="/phone.png" alt="Phone Icon" width={100} height={100} loading="lazy" />
-            </div>
             <p>-------</p>
           </div>
           <h4 className="text-[var(--white)]">
@@ -54,7 +53,7 @@ const Home = () => {
             mobile application dream come to reality through React Native.
           </h4>
         </section>
-        <section className="flex flex-col justify-center items-start mt-6 lg:flex-row gap-8">
+        <section className="flex flex-col justify-center items-start mb-24 lg:flex-row gap-8">
           <div className="flex flex-1 flex-col justify-center items-center text-center  py-4">
             <Image src="/target-devices.png" alt="Target symbol with devices" width={200} height={200} loading="lazy" />
             <div>
@@ -123,7 +122,7 @@ const Home = () => {
               <div className="flex-1 mr-2">
                 <div className="flex justify-center content-center my-4">
                   <div className="flex-1">
-                    <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
+                    <Image src="/check-circle.png" alt="Check Circle Art" width={checkMark} height={checkMark} loading="lazy" />
                   </div>
                   <div className="flex-3">
                     <h3 className="text-[var(--green)]">No Additional Hosting Fees</h3>
@@ -132,7 +131,7 @@ const Home = () => {
                 </div>
                 <div className="flex justify-center content-center my-4">
                   <div className="flex-1 ">
-                    <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
+                    <Image src="/check-circle.png" alt="Check Circle Art" width={checkMark} height={checkMark} loading="lazy" />
                   </div>
                   <div className="flex-3">
                     <h3 className="text-[var(--green)]">24/7 Customer Service</h3>
@@ -141,7 +140,7 @@ const Home = () => {
                 </div>
                 <div className="flex justify-center content-center my-4">
                   <div className="flex-1 ">
-                    <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
+                    <Image src="/check-circle.png" alt="Check Circle Art" width={checkMark} height={checkMark} loading="lazy" />
                   </div>
                   <div className="flex-3">
                     <h3 className="text-[var(--green)]">Google Analytics</h3>
@@ -152,7 +151,7 @@ const Home = () => {
               <div className="flex-1">
                 <div className="flex justify-center content-center my-4">
                   <div className="flex-1">
-                    <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
+                    <Image src="/check-circle.png" alt="Check Circle Art" width={checkMark} height={checkMark} loading="lazy" />
                   </div>
                   <div className="flex-3">
                     <h3 className="text-[var(--green)]">Unlimited Edits</h3>
@@ -161,7 +160,7 @@ const Home = () => {
                 </div>
                 <div className="flex justify-center content-center my-4">
                   <div className="flex-1">
-                    <Image src="/check-circle.png" alt="Check Circle Art" width={200} height={200} loading="lazy" />
+                    <Image src="/check-circle.png" alt="Check Circle Art" width={checkMark} height={checkMark} loading="lazy" />
                   </div>
                   <div className="flex-3">
                     <h3 className="text-[var(--green)]">Web Design and Development</h3>

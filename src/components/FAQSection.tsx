@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { FAQProps } from "@/constants";
 
-const FAQSection = ({ faqs, textColor }: FAQProps) => {
+const FAQSection = ({ faqs}: FAQProps) => {
   const [faq, setFaq] = useState([]);
   const dropdownRefs = useRef<boolean[]>([]);
 
@@ -15,17 +15,14 @@ const FAQSection = ({ faqs, textColor }: FAQProps) => {
       {faqs.map((faqs, index) => (
         <div key={index}>
           <button className="category__info__container" onClick={() => toggleDropdown(index)}>
-            <h3 className={textColor === "white" ? "white-text" : "black-text"}>{faqs.question}</h3>
-            <span className="category__info__button">
-              <h4 className={textColor === "white" ? "white-text" : "black-text"}>+</h4>
-            </span>
+            <h3 className= "text-[var(--white)] text-xl">{faqs.question}</h3>
+              <h4 className= "text-[var(--white)] text-xl">+</h4>
           </button>
-          {/* Only render the dropdown menu if this faq's index is in dropdownRefs */}
           {dropdownRefs.current[index] && (
             <>
               <div className="dropdown__menu"></div>
               <div className="synopsis__container">
-                <h3 className={textColor === "white" ? "white-text" : "grey-text"} >{faqs.answer}</h3>
+                <h3 className= "text-[var(--grey)]" >{faqs.answer}</h3>
               </div>
             </>
           )}

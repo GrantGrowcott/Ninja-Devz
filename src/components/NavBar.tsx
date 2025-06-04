@@ -14,12 +14,12 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link href="/" >
-          <span>
-            <Image src={logo} alt="Ninja Devz Company Logo" width={190} height={70} />
-          </span>
-        </Link>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <Link href="/">
+            <span>
+              <Image src={logo} alt="Ninja Devz Company Logo" width={190} height={70} />
+            </span>
+          </Link>
           <li className="nav-item">
             <Link href="/" className="nav-links" onClick={handleClick}>
               Home
