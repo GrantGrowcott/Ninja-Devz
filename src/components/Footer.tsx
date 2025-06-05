@@ -89,11 +89,7 @@ const Footer = () => {
           </ul>
         </div>
       </footer>
-      <div className="footer__copywright">
-        <h4>
-          <small> Copyright © 2024 | Ninja Devz | All Rights Reserved</small>
-        </h4>
-      </div>
+        <h4 className="text-[var(--white)] mt-6 text-center">Copyright © 2024 | Ninja Devz | All Rights Reserved</h4>
     </>
   );
 };

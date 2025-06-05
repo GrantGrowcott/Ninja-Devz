@@ -8,32 +8,32 @@ import ContactInformation from "@/components/ContactInformation";
 const About = () => {
   return (
     <>
-        <Head>
-          <title>About Ninja Devz | Web Development Services</title>
-          <meta
-            name="description"
-            content="Learn about Ninja Devz, experts in web development services. Discover our mission, unique approach, and commitment to quality."
-          />
-          <link rel="canonical" href="https://ninjadevz.com/About" />
-        </Head>
+      <Head>
+        <title>About Ninja Devz | Web Development Services</title>
+        <meta
+          name="description"
+          content="Learn about Ninja Devz, experts in web development services. Discover our mission, unique approach, and commitment to quality."
+        />
+        <link rel="canonical" href="https://ninjadevz.com/About" />
+      </Head>
       <header></header>
       <NavBar />
-      <main className="about">
-        <section className="about__container">
-          <div className="about__container__image">
+      <main className="w-[90%] mt-24 mx-auto">
+        <section className="flex items-center justify-center flex-col lg:flex-row">
+          <div className="flex-1 flex items-center justify-center">
             <Image
               src="/profile-pic.jpg"
               alt="Grant Growcott Profile in Black and White"
               width={300}
               height={300}
               loading="lazy"
-              className="about__container__image"
+              className="rounded-2xl"
             />
           </div>
-          <div className="about__container__description">
-            <h1>Ninja Devz</h1>
-            <h2>Helping to make the world a better place through design</h2>
-            <h3>
+          <div className="flex-1">
+            <h1 className="text-[var(--green)] text-lg">Ninja Devz</h1>
+            <h2 className="text-[var(--white)] my-6 text-lg">Helping to make the world a better place through design</h2>
+            <h3 className="text-[var(--grey)] leading-relaxed">
               My name is Grant Growcott, I am the lead software engineer at Ninja Devz. As a natural problem solver, I
               always look at business websites and think that I can make changes for the better. Coming from a medical
               background, I bring the customer care necessary to understand the needs of each person looking to build a
@@ -69,8 +69,10 @@ const About = () => {
             <h4>We can make anything that you can think of. You are only limited by your imagination.</h4>
           </div>
         </section>
-        <ServicesButton/>
-        <ContactInformation/>
+
+        <ServicesButton />
+        <ContactInformation />
+
         <Footer />
       </main>
     </>

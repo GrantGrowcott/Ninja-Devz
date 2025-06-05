@@ -179,8 +179,6 @@ const Services = () => {
               <div className="product__title">
                 <h3>Standard + Blogging</h3>
               </div>
-              <h4>Starting at</h4>
-              <h5>$300-$800/MO</h5>
               <ul className="list__styles">
                 <li>
                   <div className="list__container">
@@ -214,8 +212,6 @@ const Services = () => {
                 <h3>Standard</h3>
               </div>
               <div className="product__item__middle__inner">
-                <h4>Starting at</h4>
-                <h5>$200-$600/Mo</h5>
                 <ul className="list__styles">
                   <li>
                     <div className="list__container">
@@ -249,8 +245,6 @@ const Services = () => {
               <div className="product__title">
                 <h3>Logos and Graphic Design</h3>
               </div>
-              <h4>Included!</h4>
-              <h5>$0</h5>
               <ul className="list__styles">
                 <li>
                   <div className="list__container">

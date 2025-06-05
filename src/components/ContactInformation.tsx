@@ -23,9 +23,7 @@ const ContactInformation = () => {
               </div>
             </div>
           </address>
-          <div className="contact__container">
             <ContactEntry />
-          </div>
         </div>  );
 }
  
