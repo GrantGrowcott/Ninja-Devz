@@ -15,7 +15,7 @@ const router = useRouter()
    // Check if the current route is in the list
    const shouldShowNavBar = !noNavBarRoutes.includes(router.pathname);
 
-
+ 
    return (
     <>
       <Head>
